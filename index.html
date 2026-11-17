@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hunt Halal · Find halal food you can trust, across the UK</title>
+<meta name="description" content="Find halal restaurants, takeaways, dessert spots and butchers across the UK. Every listing shows how we know it is halal. Free on iPhone and Android.">
+<link rel="canonical" href="https://hunthalal.com/">
+<meta name="theme-color" content="#B5121F">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/assets/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hunt Halal">
+<meta property="og:title" content="Hunt Halal · Find halal food you can trust, across the UK">
+<meta property="og:description" content="Find halal restaurants, takeaways, dessert spots and butchers across the UK. Every listing shows how we know it is halal. Free on iPhone and Android.">
+<meta property="og:url" content="https://hunthalal.com/">
+<meta property="og:image" content="https://hunthalal.com/assets/share.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Hunt Halal", "url": "https://hunthalal.com/", "logo": "https://hunthalal.com/assets/icon.png", "email": "contact@hunthalal.com", "parentOrganization": {"@type": "Organization", "name": "DTA Digital Studio Ltd"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+a{color:#D7263D}a:hover{color:#B5121F}
+*{box-sizing:border-box}
+input::placeholder{color:#6B6878}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #F7963B;outline-offset:3px}
+.hh-nav a{color:#1C1B29;text-decoration:none}
+.hh-nav a:hover{color:#D7263D}
+.hh-foot a{color:#FCD9B4;text-decoration:none}
+.hh-foot a:hover{color:#FFFFFF}
+.hh-store{transition:transform .2s ease, box-shadow .2s ease}
+.hh-store:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(28,27,41,.3);color:#FFFFFF}
+.hh-cta{transition:transform .2s ease, filter .2s ease}
+.hh-cta:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.hh-cta:active{transform:translateY(0) scale(.98)}
+.hh-lift{transition:transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s ease}
+.hh-lift:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(28,27,41,.1)}
+.hh-card{transition:transform .25s cubic-bezier(.2,.7,.2,1), border-color .25s ease}
+.hh-card:hover{transform:translateY(-3px);border-color:#F7963B}
+
+@keyframes hhDescend{0%{transform:translateY(-520px);opacity:0}12%{opacity:1}100%{transform:translateY(0);opacity:1}}
+@keyframes hhSway{0%,100%{transform:rotate(0) translateX(0)}25%{transform:rotate(4.5deg) translateX(-5px)}75%{transform:rotate(-4.5deg) translateX(5px)}}
+@keyframes hhDrift{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+@keyframes hhMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes hhCloud{from{transform:translateX(-30px)}to{transform:translateX(50px)}}
+@keyframes hhRipple{0%{transform:scale(.6);opacity:.55}100%{transform:scale(2.4);opacity:0}}
+@keyframes hhWords{0%,14%{transform:translateY(0)}18%,32%{transform:translateY(-16.6667%)}36%,50%{transform:translateY(-33.3333%)}54%,68%{transform:translateY(-50%)}72%,86%{transform:translateY(-66.6667%)}90%,100%{transform:translateY(-83.3333%)}}
+@keyframes hhPopIn{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes hhReveal{from{transform:translateY(24px)}to{transform:translateY(0)}}
+@keyframes hhFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes hhFlyY{0%{transform:translateY(0) scale(1,1);animation-timing-function:ease-out}13%{transform:translateY(16px) scale(1.07,.9);animation-timing-function:ease-in-out}25%{transform:translateY(-10px) scale(.94,1.1);animation-timing-function:cubic-bezier(.55,0,.9,.45)}100%{transform:translateY(-780px) scale(.58,.6)}}
+@keyframes hhFlyX{0%,13%{transform:translateX(0) rotate(0);animation-timing-function:ease-in-out}25%{transform:translateX(-8px) rotate(-7deg);animation-timing-function:cubic-bezier(.25,.5,.4,1)}100%{transform:translateX(300px) rotate(22deg)}}
+@keyframes hhBackY{from{transform:translateY(-780px) scale(.7)}to{transform:translateY(0) scale(1)}}
+@keyframes hhBackX{0%{transform:translateX(-150px) rotate(17deg)}26%{transform:translateX(-70px) rotate(-12deg)}46%{transform:translateX(-26px) rotate(8deg)}63%{transform:translateX(-6px) rotate(-5deg)}78%{transform:translateX(0) rotate(3deg)}90%{transform:translateX(0) rotate(-1.4deg)}100%{transform:translateX(0) rotate(0)}}
+@keyframes hhBubble{0%{transform:scale(.5);opacity:0}7%{transform:scale(1.06);opacity:1}12%{transform:scale(1)}88%{transform:scale(1) translateY(0);opacity:1}100%{transform:scale(1) translateY(-10px);opacity:0}}
+@keyframes hhF1{0%{transform:translate(0,0) rotate(0) scale(.3);opacity:0}10%{opacity:1}100%{transform:translate(-120px,150px) rotate(-220deg) scale(1);opacity:0}}
+@keyframes hhF2{0%{transform:translate(0,0) rotate(0) scale(.3);opacity:0}10%{opacity:1}100%{transform:translate(-56px,210px) rotate(160deg) scale(.9);opacity:0}}
+@keyframes hhF3{0%{transform:translate(0,0) rotate(0) scale(.3);opacity:0}10%{opacity:1}100%{transform:translate(40px,230px) rotate(-140deg) scale(1.1);opacity:0}}
+@keyframes hhF4{0%{transform:translate(0,0) rotate(0) scale(.3);opacity:0}10%{opacity:1}100%{transform:translate(110px,170px) rotate(240deg) scale(.8);opacity:0}}
+@keyframes hhF5{0%{transform:translate(0,0) rotate(0) scale(.3);opacity:0}10%{opacity:1}100%{transform:translate(-150px,60px) rotate(120deg) scale(.7);opacity:0}}
+@keyframes hhF6{0%{transform:translate(0,0) rotate(0) scale(.3);opacity:0}10%{opacity:1}100%{transform:translate(150px,80px) rotate(-180deg) scale(.75);opacity:0}}
+@keyframes hhGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+.hh-drop{animation:hhDescend 2.6s cubic-bezier(.16,.84,.3,1) .15s both}
+.hh-float{transform-origin:50% 6%;animation:hhSway 7s ease-in-out infinite}
+.hh-drift{animation:hhDrift 4.5s ease-in-out infinite alternate}
+.hh-marquee{animation:hhMarquee 60s linear infinite}
+.hh-ticker{-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.hh-ticker:hover .hh-marquee{animation-play-state:paused}
+.hh-tk-solid,.hh-tk-line{font-size:76px;line-height:1;font-weight:900;letter-spacing:-2.5px;text-transform:uppercase}
+.hh-tk-solid{color:#D7263D}
+.hh-tk-line{color:transparent;-webkit-text-stroke:2px #D7263D}
+.hh-cloud{animation:hhCloud 26s ease-in-out infinite alternate}
+.hh-cloud2{animation:hhCloud 34s ease-in-out -8s infinite alternate-reverse}
+.hh-ripple{animation:hhRipple 2.6s ease-out infinite}
+.hh-words{animation:hhWords 12s cubic-bezier(.7,0,.2,1) infinite}
+.hh-pop{animation:hhPopIn .5s ease-out both}
+.hh-fade{animation:hhFade .3s ease both}
+.hh-fly-y{animation:hhFlyY 1.3s both}
+.hh-fly-x{animation:hhFlyX 1.3s both}
+.hh-back-y{animation:hhBackY 2.5s cubic-bezier(.16,.84,.3,1) both}
+.hh-back-x{animation:hhBackX 2.9s ease-in-out both}
+.hh-bubble{animation:hhBubble 3.6s cubic-bezier(.3,.9,.4,1) both}
+.hh-bird{transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.hh-bird:hover{transform:scale(1.05) rotate(-2deg)}
+.hh-bird:active{transform:scale(.97)}
+.hh-feather{position:absolute;left:0;top:0;width:13px;height:26px;border-radius:90% 10% 90% 10%;background:linear-gradient(135deg,#FFFFFF,#F1ECE6);box-shadow:0 2px 4px rgba(40,0,6,.2);opacity:0}
+.hh-f1{animation:hhF1 1.9s cubic-bezier(.15,.6,.4,1) .12s both}
+.hh-f2{animation:hhF2 2.2s cubic-bezier(.15,.6,.4,1) .16s both}
+.hh-f3{animation:hhF3 2.4s cubic-bezier(.15,.6,.4,1) .12s both}
+.hh-f4{animation:hhF4 2s cubic-bezier(.15,.6,.4,1) .2s both}
+.hh-f5{animation:hhF5 1.7s cubic-bezier(.15,.6,.4,1) .18s both}
+.hh-f6{animation:hhF6 1.8s cubic-bezier(.15,.6,.4,1) .14s both}
+.hh-progress{transform-origin:0 50%;transform:scaleX(0)}
+.hh-cta,.hh-store{white-space:nowrap;justify-content:center;line-height:1.2}
+.hh-mobilebar{display:none}
+
+@supports (animation-timeline: view()){
+  .hh-reveal{animation:hhReveal linear both;animation-timeline:view();animation-range:entry 0% entry 30%}
+  .hh-progress{animation:hhGrow linear both;animation-timeline:scroll(root)}
+}
+@media (prefers-reduced-motion: reduce){
+  .hh-fly-y,.hh-fly-x,.hh-back-y,.hh-back-x,.hh-bubble,.hh-feather,.hh-drop,.hh-float,.hh-drift,.hh-marquee,.hh-cloud,.hh-cloud2,.hh-ripple,.hh-words,.hh-pop,.hh-reveal,.hh-fade{animation:none !important}
+  html{scroll-behavior:auto}
+}
+@media (max-width: 900px){
+  .hh-hide-sm{display:none !important}
+  .hh-navbar{flex-wrap:nowrap !important;padding:8px 0 8px 12px !important;gap:10px !important}
+  .hh-logo-icon{width:36px !important;height:36px !important;border-radius:10px !important}
+  .hh-navlinks{flex:1 1 auto;min-width:0;gap:8px !important;overflow-x:auto;scrollbar-width:none;padding-right:12px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  .hh-navlinks::-webkit-scrollbar{display:none}
+  .hh-navlinks a{flex:0 0 auto;white-space:nowrap;font-size:14px;font-weight:600;padding:9px 14px;border-radius:999px;background:#FFF6EC;border:1px solid #FCD9B4;min-height:40px;display:flex;align-items:center}
+  .hh-navlinks a:first-child{background:#D7263D;border-color:#D7263D;color:#FFFFFF}
+  .hh-split{grid-template-columns:minmax(0,1fr) !important}
+  .hh-bento > *{grid-column:1 / -1 !important}
+  .hh-h1{font-size:44px !important;letter-spacing:-1px !important}
+  .hh-h2{font-size:32px !important;letter-spacing:-.5px !important}
+  .hh-section{padding-top:64px !important;padding-bottom:64px !important}
+  .hh-mobilebar{display:flex}
+  .hh-tk-solid,.hh-tk-line{font-size:44px;letter-spacing:-1px}
+  .hh-ticker img{height:40px !important}
+  .hh-store{flex:1 1 170px}
+  .hh-searchbtn{flex:1 1 100% !important}
+  .hh-main-cta{align-self:stretch !important}
+  .hh-foot{padding-bottom:110px !important}
+}
+</style>
+</head>
+<body>
+<noscript><div style="font-family:system-ui,sans-serif;padding:32px;max-width:640px;margin:0 auto"><h1>Hunt Halal</h1><p>Find halal restaurants, takeaways, dessert spots and butchers across the UK. Every listing shows how we know it is halal. Free on iPhone and Android.</p><p>Contact: <a href="mailto:contact@hunthalal.com">contact@hunthalal.com</a></p></div></noscript>
+<div id="app"></div>
+<template id="page">
+
+<div style="font-family: 'Poppins', system-ui, sans-serif; color: #1C1B29; width: 100%; overflow-x: clip">
+
+<!-- TOP STRIP -->
+<div class="hh-hide-sm" style="background: #1C1B29; color: #FFFFFF; font-size: 13px; font-weight: 500; text-align: center; padding: 9px 16px">
+<span style="color: #F7963B; font-weight: 700">Free on iPhone and Android</span> · Browse 5,000+ halal places without creating an account
+</div>
+
+<!-- NAV -->
+<header style="background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid #ECE7E2; position: sticky; top: 0; z-index: 30">
+<nav class="hh-nav hh-navbar" aria-label="Main" style="max-width: 1240px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="#top" aria-label="Hunt Halal home" style="display: flex; align-items: center; gap: 10px; flex: 0 0 auto">
+<img class="hh-logo-icon" src="/assets/icon.png" alt="" style="width: 42px; height: 42px; border-radius: 12px; object-fit: cover">
+<img class="hh-hide-sm" src="/assets/wordmark.png" alt="Hunt Halal" style="height: 24px; width: auto">
+</a>
+<div class="hh-navlinks" style="display: flex; align-items: center; gap: 30px; font-size: 15px; font-weight: 500">
+<a href="#finder">Find food</a>
+<a href="#badges">Halal badges</a>
+<a href="#features">Features</a>
+<a href="#trust">Why trust us</a>
+<a href="#business">For businesses</a>
+</div>
+<a href="#download" class="hh-cta hh-hide-sm" style="display: inline-flex; align-items: center; gap: 8px; background: #D7263D; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 24px; border-radius: 999px; min-height: 46px; box-shadow: 0 6px 14px rgba(122,10,18,.3)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>
+Get the app
+</a>
+</nav>
+<div aria-hidden="true" class="hh-progress" style="height: 3px; background: #F7963B"></div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="position: relative; background: linear-gradient(125deg, #5A0710 0%, #7A0A12 22%, #B5121F 62%, #D7263D 100%); color: #FFFFFF; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.08) 1.6px, transparent 1.6px); background-size: 26px 26px"></div>
+<div aria-hidden="true" style="position: absolute; right: -200px; top: -220px; width: 720px; height: 720px; border-radius: 50%; background: #F7963B; opacity: .2"></div>
+<div aria-hidden="true" class="hh-cloud" style="position: absolute; left: 6%; top: 70px; width: 190px; height: 54px; border-radius: 999px; background: rgba(255,255,255,.1); box-shadow: 46px -22px 0 -6px rgba(255,255,255,.1)"></div>
+<div aria-hidden="true" class="hh-cloud2" style="position: absolute; left: 44%; top: 30px; width: 150px; height: 44px; border-radius: 999px; background: rgba(255,255,255,.08); box-shadow: 40px -18px 0 -6px rgba(255,255,255,.08)"></div>
+<div aria-hidden="true" class="hh-cloud" style="position: absolute; right: 4%; bottom: 190px; width: 220px; height: 60px; border-radius: 999px; background: rgba(255,255,255,.09); box-shadow: -50px -24px 0 -8px rgba(255,255,255,.09)"></div>
+
+<div class="hh-split" style="position: relative; max-width: 1240px; margin: 0 auto; padding: 72px 24px 150px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 40px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div class="hh-pop" style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.3); padding: 7px 16px 7px 7px; border-radius: 999px; font-size: 14px; font-weight: 500">
+<span style="background: #F7963B; color: #1C1B29; font-weight: 800; font-size: 12px; padding: 4px 10px; border-radius: 999px">UK-WIDE</span>
+Halal food, with the evidence shown
+</div>
+
+<h1 class="hh-h1" aria-label="Find halal food you can actually trust" style="margin: 0; font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -2.5px">
+<span aria-hidden="true" style="display: block">Find halal</span>
+<span aria-hidden="true" style="display: block; height: 1.3em; margin: -.09em 0; overflow: hidden; color: #F7963B">
+<span class="hh-words" style="display: flex; flex-direction: column">
+<span style="height: 1.3em; line-height: 1.3em">burgers</span>
+<span style="height: 1.3em; line-height: 1.3em">biryani</span>
+<span style="height: 1.3em; line-height: 1.3em">wings</span>
+<span style="height: 1.3em; line-height: 1.3em">desserts</span>
+<span style="height: 1.3em; line-height: 1.3em">butchers</span>
+<span style="height: 1.3em; line-height: 1.3em">burgers</span>
+</span>
+</span>
+<span aria-hidden="true" style="display: block">you can <span style="position: relative; white-space: nowrap">actually trust.<svg aria-hidden="true" viewBox="0 0 300 14" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -8px; width: 100%; height: 12px"><path d="M3 9C60 2 120 12 180 6s80-3 117 2" fill="none" stroke="#F7963B" stroke-width="5" stroke-linecap="round"></path></svg></span></span>
+</h1>
+
+<p style="margin: 6px 0 0; font-size: 19px; line-height: 1.6; color: rgba(255,255,255,.92); max-width: 560px">Restaurants, takeaways, dessert bars and butchers across the UK. Every single listing tells you <strong style="color: #FFFFFF">how we know it's halal</strong>, so you never have to guess at the counter again.</p>
+
+<div style="background: #FFFFFF; border-radius: 22px; padding: 8px; display: flex; gap: 8px; flex-wrap: wrap; max-width: 560px; box-shadow: 0 22px 46px rgba(40,0,6,.45)">
+<label for="hh-pc" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Your postcode or town</label>
+<div style="flex: 1 1 230px; display: flex; align-items: center; gap: 10px; padding: 0 14px; min-height: 54px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D7263D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+<input id="hh-pc" type="text" placeholder="Town or postcode, e.g. Bradford or E6" value="{{ q }}" onInput="{{ typeQ }}" onKeyDown="{{ keyQ }}" style="border: 0; outline: none; font: inherit; font-size: 16px; color: #1C1B29; width: 100%; background: transparent; min-height: 44px">
+</div>
+<button type="button" onClick="{{ goFinder }}" class="hh-cta hh-searchbtn" style="flex: 0 0 auto; border: 0; cursor: pointer; background: #D7263D; color: #FFFFFF; font: inherit; font-weight: 700; font-size: 16px; padding: 0 30px; min-height: 54px; border-radius: 14px; display: flex; align-items: center; gap: 8px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+Search
+</button>
+</div>
+
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<a href="{{ appStoreHref }}" class="hh-store" aria-label="{{ storeTop }} App Store" style="display: flex; align-items: center; gap: 12px; background: #1C1B29; color: #FFFFFF; text-decoration: none; padding: 10px 22px 10px 16px; border-radius: 14px; min-height: 60px; min-width: 184px; border: 1px solid rgba(255,255,255,.3)">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"></rect><path d="M11 18h2"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.15"><span style="font-size: 11px; opacity: .85">{{ storeTop }}</span><span style="font-size: 19px; font-weight: 600">App Store</span></span>
+</a>
+<a href="{{ playHref }}" class="hh-store" aria-label="{{ playTop }} Google Play" style="display: flex; align-items: center; gap: 12px; background: #1C1B29; color: #FFFFFF; text-decoration: none; padding: 10px 22px 10px 16px; border-radius: 14px; min-height: 60px; min-width: 184px; border: 1px solid rgba(255,255,255,.3)">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"></path><path d="M5 3.5 14 12 5 20.5"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.15"><span style="font-size: 11px; opacity: .85">{{ playTop }}</span><span style="font-size: 19px; font-weight: 600">Google Play</span></span>
+</a>
+</div>
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 14px; color: rgba(255,255,255,.95)">
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F7963B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Free to download</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F7963B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>No sign-up needed to browse</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F7963B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Honest badges, never guesswork</span>
+</div>
+</div>
+
+<!-- Phone + parachuting mascot -->
+<div style="position: relative; display: flex; justify-content: center; padding: 40px 0 10px">
+<button type="button" class="hh-hide-sm hh-bird" onClick="{{ fly }}" aria-label="Tap the chicken to make it fly off" style="position: absolute; left: -30px; top: -50px; z-index: 4; width: 200px; border: 0; padding: 0; background: transparent; cursor: pointer">
+<span class="{{ birdX }}" style="display: block; transform-origin: 50% 6%">
+<span class="{{ birdY }}" style="display: block">
+<img class="{{ birdSway }}" src="/assets/mascot.png" alt="The Hunt Halal chicken parachuting in" style="width: 100%; filter: drop-shadow(0 18px 20px rgba(40,0,6,.4))">
+</span>
+</span>
+<sc-if value="{{ showFeathers }}" hint-placeholder-val="{{ false }}">
+<span aria-hidden="true" style="position: absolute; left: 96px; top: 170px; width: 0; height: 0; display: block">
+<span class="hh-feather hh-f1"></span><span class="hh-feather hh-f2"></span><span class="hh-feather hh-f3"></span><span class="hh-feather hh-f4"></span><span class="hh-feather hh-f5"></span><span class="hh-feather hh-f6"></span>
+</span>
+</sc-if>
+</button>
+<sc-if value="{{ showMsg }}" hint-placeholder-val="{{ false }}">
+<div role="status" class="hh-bubble hh-hide-sm" style="position: absolute; left: 128px; top: -38px; z-index: 5; background: #FFFFFF; color: #1C1B29; font-size: 14px; font-weight: 600; padding: 11px 16px; border-radius: 18px; box-shadow: 0 14px 28px rgba(40,0,6,.35); transform-origin: 10% 100%">{{ birdMsg }}<span aria-hidden="true" style="position: absolute; left: 22px; bottom: -6px; width: 14px; height: 14px; background: #FFFFFF; transform: rotate(45deg); border-radius: 3px"></span></div>
+</sc-if>
+<div class="hh-pop hh-hide-sm" style="animation-delay: 2.2s; position: absolute; right: -14px; top: 130px; z-index: 4; background: #FFFFFF; border-radius: 16px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; box-shadow: 0 16px 32px rgba(40,0,6,.35); transform-origin: center">
+<span style="width: 36px; height: 36px; border-radius: 50%; background: #E3F4EB; display: flex; align-items: center; justify-content: center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1E8E5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 13px; font-weight: 700; color: #1E8E5A">Certified</span><span style="font-size: 11px; color: #6B6878">Certificate checked</span></span>
+</div>
+<div role="img" aria-label="The Hunt Halal app's Home screen" style="position: relative; z-index: 2; width: 312px; background: #1C1B29; border-radius: 50px; padding: 11px; box-shadow: 0 50px 90px rgba(30,0,4,.6), inset 0 0 0 2px #3a3946; transform: rotate(2deg)">
+<div style="border-radius: 40px; overflow: hidden; background: #FAF8F6; color: #1C1B29; height: 640px; display: flex; flex-direction: column">
+<div style="background: linear-gradient(160deg, #7A0A12, #B5121F 55%, #D7263D); padding: 34px 16px 18px; color: #FFFFFF; border-radius: 0 0 24px 24px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="width: 38px; height: 38px; border-radius: 50%; background: #F7963B; border: 2px solid #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; color: #1C1B29">A</span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 11px; opacity: .85">Good evening</span><span style="font-size: 17px; font-weight: 700">Salam, Aisha</span></span>
+</div>
+<span style="width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.18); display: flex; align-items: center; justify-content: center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"></path></svg></span>
+</div>
+<div style="margin-top: 14px; background: #FFFFFF; border-radius: 12px; padding: 11px 12px; display: flex; align-items: center; gap: 8px; color: #6B6878; font-size: 12px">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D7263D" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+Search town, postcode or food
+</div>
+</div>
+<div style="display: flex; gap: 6px; padding: 14px 12px 4px; overflow: hidden">
+<span style="flex: 0 0 auto; display: flex; align-items: center; gap: 5px; background: #FFFFFF; border: 1px solid #ECE7E2; border-radius: 999px; padding: 6px 10px; font-size: 10px; font-weight: 500"><span style="width: 8px; height: 8px; border-radius: 50%; background: #F28C28"></span>Fast Food</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; gap: 5px; background: #FFFFFF; border: 1px solid #ECE7E2; border-radius: 999px; padding: 6px 10px; font-size: 10px; font-weight: 500"><span style="width: 8px; height: 8px; border-radius: 50%; background: #D7263D"></span>Restaurants</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; gap: 5px; background: #FFFFFF; border: 1px solid #ECE7E2; border-radius: 999px; padding: 6px 10px; font-size: 10px; font-weight: 500"><span style="width: 8px; height: 8px; border-radius: 50%; background: #7A0A12"></span>Butchers</span>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px 8px">
+<span style="font-size: 14px; font-weight: 700">Near you</span>
+<span style="font-size: 11px; font-weight: 600; color: #D7263D">See all</span>
+</div>
+<div style="display: flex; gap: 10px; padding: 0 12px">
+<div style="flex: 0 0 150px; background: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,.08)">
+<div style="height: 84px; background: linear-gradient(135deg, #F28C28, #D7263D); position: relative">
+<span style="position: absolute; left: 8px; bottom: -16px; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8E0B16, #D7263D); border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">GR</span>
+<span style="position: absolute; right: 8px; top: 8px; background: rgba(28,27,41,.45); color: #FFFFFF; font-size: 8px; font-weight: 700; padding: 2px 6px; border-radius: 6px; letter-spacing: .5px">DEMO</span>
+</div>
+<div style="padding: 20px 10px 10px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 12px; font-weight: 600">Grill Republic</span>
+<span style="font-size: 9.5px; color: #6B6878"><span style="color: #A85A12; font-weight: 600">Fast food</span> · 0.4 mi</span>
+<span style="align-self: flex-start; background: #E3F4EB; color: #17714A; font-size: 8.5px; font-weight: 600; padding: 3px 7px; border-radius: 6px">Certified · fully halal</span>
+</div>
+</div>
+<div style="flex: 0 0 150px; background: #FFFFFF; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,.08)">
+<div style="height: 84px; background: linear-gradient(135deg, #E0528F, #F7963B); position: relative">
+<span style="position: absolute; left: 8px; bottom: -16px; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #B0356B, #D7263D); border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">SR</span>
+<span style="position: absolute; right: 8px; top: 8px; background: rgba(28,27,41,.45); color: #FFFFFF; font-size: 8px; font-weight: 700; padding: 2px 6px; border-radius: 6px; letter-spacing: .5px">DEMO</span>
+</div>
+<div style="padding: 20px 10px 10px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 12px; font-weight: 600">Sugar Rush</span>
+<span style="font-size: 9.5px; color: #6B6878"><span style="color: #B0356B; font-weight: 600">Desserts</span> · 0.9 mi</span>
+<span style="align-self: flex-start; background: #E4EDFB; color: #2464C8; font-size: 8.5px; font-weight: 600; padding: 3px 7px; border-radius: 6px">Owner · halal options</span>
+</div>
+</div>
+</div>
+<div style="margin: 16px 12px 0; background: linear-gradient(90deg, #D7263D, #C8182C); border-radius: 16px; padding: 14px; color: #FFFFFF; display: flex; gap: 10px; align-items: center">
+<span style="width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.2); display: flex; align-items: center; justify-content: center; flex: 0 0 auto"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFFFF"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg></span>
+<span style="display: flex; flex-direction: column; line-height: 1.25"><span style="font-size: 11.5px; font-weight: 700">Review your favourite halal spots</span><span style="font-size: 9.5px; opacity: .95">Earn Hunt Score points for every review</span></span>
+</div>
+<div style="margin-top: auto; background: linear-gradient(180deg, #C8182C, #8E0B16); padding: 12px 22px 16px; border-radius: 24px 24px 0 0; display: flex; justify-content: space-between; align-items: center">
+<span style="width: 42px; height: 42px; margin-top: -26px; border-radius: 50%; background: linear-gradient(135deg, #F25A3A, #D7263D); border: 3px solid #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(122,10,18,.4)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"></path></svg></span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"></path><path d="M9 4v14M15 6v14"></path></svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATS CARD (overlaps hero) -->
+<section aria-label="Hunt Halal in numbers" style="position: relative; z-index: 5; padding: 0 24px; margin-top: -84px">
+<div style="max-width: 1240px; margin: 0 auto; background: #FFFFFF; border-radius: 28px; box-shadow: 0 30px 60px rgba(122,10,18,.18); border: 1px solid #ECE7E2; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); padding: 14px">
+<div style="text-align: center; padding: 22px 16px"><div style="font-size: 54px; font-weight: 900; color: #D7263D; line-height: 1; letter-spacing: -1.5px">{{ nPlaces }}+</div><div style="margin-top: 8px; font-size: 15px; color: #6B6878; font-weight: 500">halal places listed</div></div>
+<div style="text-align: center; padding: 22px 16px"><div style="font-size: 54px; font-weight: 900; color: #A85A12; line-height: 1; letter-spacing: -1.5px">{{ nButchers }}+</div><div style="margin-top: 8px; font-size: 15px; color: #6B6878; font-weight: 500">halal butchers</div></div>
+<div style="text-align: center; padding: 22px 16px"><div style="font-size: 54px; font-weight: 900; color: #D7263D; line-height: 1; letter-spacing: -1.5px">{{ nTowns }}</div><div style="margin-top: 8px; font-size: 15px; color: #6B6878; font-weight: 500">UK towns and cities</div></div>
+<div style="text-align: center; padding: 22px 16px"><div style="font-size: 54px; font-weight: 900; color: #A85A12; line-height: 1; letter-spacing: -1.5px">4</div><div style="margin-top: 8px; font-size: 15px; color: #6B6878; font-weight: 500">clear levels of halal evidence</div></div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<div aria-hidden="true" class="hh-ticker" style="overflow: hidden; padding: 72px 0 0; background: #FFFFFF">
+<div class="hh-marquee" style="display: flex; align-items: center; width: max-content; gap: 44px; padding-right: 44px; white-space: nowrap">
+<span class="hh-tk-solid">Peri peri</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Smash burgers</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Biryani</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Wings</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Shawarma</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Waffles</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Karahi</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Kebabs</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Steaks</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Noodles</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto">
+<span class="hh-tk-solid">Peri peri</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Smash burgers</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Biryani</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Wings</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Shawarma</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Waffles</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Karahi</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Kebabs</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-solid">Steaks</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto"><span class="hh-tk-line">Noodles</span><img src="/assets/mascot.png" alt="" style="height: 62px; width: auto; flex: 0 0 auto">
+</div>
+</div>
+
+<!-- FINDER (real search over the Hunt Halal listings) -->
+<section id="finder" class="hh-section" style="background: #FFFFFF; padding: 72px 24px 104px; scroll-margin-top: 70px">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="hh-split" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: end; margin-bottom: 32px">
+<div>
+<div style="color: #B5121F; font-weight: 700; font-size: 14px; letter-spacing: 2px">TRY IT RIGHT HERE</div>
+<h2 class="hh-h2" style="margin: 12px 0 0; font-size: 52px; line-height: 1.06; font-weight: 900; letter-spacing: -1.5px">What's halal <span style="color: #D7263D">near you?</span></h2>
+</div>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #57546A">This is a live search of real Hunt Halal listings, not a demo. Type your town or postcode to see what's around.</p>
+</div>
+
+<div style="background: #FFF6EC; border: 1px solid #FCD9B4; border-radius: 28px; padding: 24px; display: flex; flex-direction: column; gap: 18px">
+<div style="background: #FFFFFF; border: 2px solid #1C1B29; border-radius: 18px; display: flex; align-items: center; gap: 12px; padding: 0 18px; min-height: 60px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D7263D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+<label for="hh-q2" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Search by town, postcode or place name</label>
+<input id="hh-q2" type="text" placeholder="Town, postcode or place name" value="{{ q }}" onInput="{{ typeQ }}" style="border: 0; outline: none; font: inherit; font-size: 18px; font-weight: 500; color: #1C1B29; width: 100%; background: transparent; min-height: 48px">
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center">
+<span style="font-size: 13px; font-weight: 600; color: #57546A; margin-right: 4px">Popular:</span>
+<sc-for list="{{ towns }}" as="tw" hint-placeholder-count="8">
+<button type="button" onClick="{{ tw.pick }}" aria-pressed="{{ tw.pressed }}" style="{{ tw.style }}">{{ tw.name }}</button>
+</sc-for>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center">
+<span style="font-size: 13px; font-weight: 600; color: #57546A; margin-right: 4px">Craving:</span>
+<sc-for list="{{ cravings }}" as="cr" hint-placeholder-count="7">
+<button type="button" onClick="{{ cr.pick }}" aria-pressed="{{ cr.pressed }}" style="{{ cr.style }}">{{ cr.name }}</button>
+</sc-for>
+</div>
+</div>
+
+<div role="status" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin: 26px 0 16px; min-height: 46px">
+<div style="font-size: 18px; font-weight: 700">{{ resultLine }}</div>
+<sc-if value="{{ showMore }}" hint-placeholder-val="{{ false }}">
+<button type="button" class="hh-cta" onClick="{{ nextPage }}" style="border: 2px solid #1C1B29; background: #FFFFFF; color: #1C1B29; font: inherit; font-weight: 600; font-size: 15px; padding: 10px 20px; border-radius: 999px; cursor: pointer; min-height: 46px; display: inline-flex; align-items: center; gap: 8px">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.3L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-15.5 6.3L3 16"></path><path d="M3 21v-5h5"></path></svg>
+Show me 6 more</button>
+</sc-if>
+</div>
+
+<sc-if value="{{ showLoading }}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; font-size: 16px; color: #6B6878">Loading the listings…</p>
+</sc-if>
+
+<sc-if value="{{ showFailed }}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; font-size: 16px; color: #6B6878">The search couldn't load just now. Everything is in the app.</p>
+</sc-if>
+
+<sc-if value="{{ showResults }}" hint-placeholder-val="{{ true }}">
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 16px">
+<sc-for list="{{ results }}" as="r" hint-placeholder-count="6">
+<div class="hh-card hh-fade" style="background: #FFFFFF; border: 1px solid #ECE7E2; border-radius: 20px; padding: 18px; display: flex; gap: 14px; align-items: flex-start">
+<span aria-hidden="true" style="{{ r.logoStyle }}">{{ r.initials }}</span>
+<div style="display: flex; flex-direction: column; gap: 5px; min-width: 0">
+<span style="font-size: 17px; font-weight: 700; line-height: 1.25">{{ r.name }}</span>
+<span style="font-size: 14px; color: #57546A"><span style="{{ r.catStyle }}">{{ r.cat }}</span> · {{ r.where }}</span>
+<span style="font-size: 13px; color: #6B6878">{{ r.extra }}</span>
+<span style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px">
+<span style="background: #FAF8F6; border: 1px solid #ECE7E2; color: #57546A; font-weight: 600; font-size: 12px; padding: 4px 9px; border-radius: 7px">{{ r.basis }}</span>
+<span style="background: #EFEDF1; color: #57546A; font-weight: 600; font-size: 12px; padding: 4px 9px; border-radius: 7px">Not yet verified</span>
+</span>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="margin-top: 16px; background: linear-gradient(120deg, #7A0A12, #B5121F 60%, #D7263D); color: #FFFFFF; border-radius: 24px; padding: 26px 30px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 18px; flex: 1 1 380px">
+<img src="/assets/mascot.png" alt="" style="width: 60px; height: 74px; object-fit: contain; flex: 0 0 auto">
+<div><div style="font-size: 22px; font-weight: 800; line-height: 1.25">{{ lockTitle }}</div><div style="font-size: 15px; margin-top: 4px; color: #FDE7E7">Reviews, photos, the map and directions are all in the app.</div></div>
+</div>
+<a href="#download" class="hh-cta" style="display: inline-flex; align-items: center; gap: 10px; background: #F7963B; color: #1C1B29; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 28px; border-radius: 999px; min-height: 52px">Get the app
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+</div>
+</sc-if>
+
+<sc-if value="{{ showEmpty }}" hint-placeholder-val="{{ false }}">
+<div style="background: #FAF8F6; border: 2px dashed #FCD9B4; border-radius: 24px; padding: 36px 28px; display: flex; align-items: center; gap: 22px; flex-wrap: wrap">
+<img src="/assets/mascot.png" alt="" style="width: 84px; height: 104px; object-fit: contain">
+<div style="flex: 1 1 320px"><div style="font-size: 22px; font-weight: 800">Nothing there yet. Our chicken hasn't landed.</div><div style="font-size: 16px; line-height: 1.6; color: #57546A; margin-top: 6px">Check the spelling, try a nearby town, or try just the first half of your postcode. Know a halal spot there? Add it in the app and earn Hunt Score.</div></div>
+</div>
+</sc-if>
+</div>
+</section>
+
+<!-- BADGE EXPLORER -->
+<section id="badges" class="hh-section" style="background: #FFF6EC; padding: 104px 24px; scroll-margin-top: 70px">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="hh-reveal" style="max-width: 820px; margin: 0 0 48px">
+<div style="color: #B5121F; font-weight: 700; font-size: 14px; letter-spacing: 2px">THE QUESTION WE ALL ASK</div>
+<h2 class="hh-h2" style="margin: 12px 0 16px; font-size: 52px; line-height: 1.06; font-weight: 900; letter-spacing: -1.5px">"Is it <span style="color: #D7263D">actually</span> halal?"</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.65; color: #57546A">You've asked at the counter. You've rung ahead. You've scrolled through old comments. Hunt Halal answers it before you leave the house. Tap a badge to see what each one means.</p>
+</div>
+
+<div class="hh-split hh-reveal" style="display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 28px; align-items: stretch">
+<div role="group" aria-label="Halal evidence badges" style="display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{ badges }}" as="b" hint-placeholder-count="4">
+<button type="button" onClick="{{ b.pick }}" aria-pressed="{{ b.pressed }}" style="{{ b.btnStyle }}">
+<span style="{{ b.iconStyle }}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 2px; text-align: left; flex: 1 1 auto"><span style="font-size: 18px; font-weight: 700; color: #1C1B29">{{ b.label }}</span><span style="font-size: 13px; color: #6B6878; font-weight: 400">{{ b.teaser }}</span></span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B6878" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg>
+</button>
+</sc-for>
+</div>
+
+<div style="background: #FFFFFF; border-radius: 28px; padding: 34px; box-shadow: 0 24px 50px rgba(122,10,18,.12); border: 1px solid #ECE7E2; display: flex; flex-direction: column; gap: 22px; position: relative; overflow: hidden">
+<div aria-hidden="true" style="{{ badge.blobStyle }}"></div>
+<div style="position: relative; display: flex; align-items: center; gap: 12px; flex-wrap: wrap">
+<span style="{{ badge.pillStyle }}">{{ badge.label }}</span>
+<span style="font-size: 13px; color: #6B6878; font-weight: 500">How sure are we?</span>
+<span aria-hidden="true" style="display: flex; gap: 5px">
+<sc-for list="{{ badge.bars }}" as="bar" hint-placeholder-count="4"><span style="{{ bar.style }}"></span></sc-for>
+</span>
+</div>
+<p style="position: relative; margin: 0; font-size: 26px; line-height: 1.35; font-weight: 700; letter-spacing: -.3px">{{ badge.desc }}</p>
+<div style="position: relative; background: #FAF8F6; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; align-items: flex-start">
+<img src="/assets/mascot.png" alt="" style="width: 44px; height: 54px; object-fit: contain; flex: 0 0 auto">
+<div><div style="font-size: 13px; font-weight: 700; color: #B5121F; letter-spacing: 1px">WHAT IT MEANS FOR YOU</div><div style="font-size: 16px; line-height: 1.55; color: #1C1B29; margin-top: 4px">{{ badge.meaning }}</div></div>
+</div>
+<div style="position: relative; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: 14px; color: #6B6878">
+Every listing also says
+<span style="background: #FFF6EC; border: 1px solid #FCD9B4; color: #A85A12; font-weight: 600; font-size: 13px; padding: 5px 12px; border-radius: 8px">Fully halal</span>
+or
+<span style="background: #FAF8F6; border: 1px solid #ECE7E2; color: #57546A; font-weight: 600; font-size: 13px; padding: 5px 12px; border-radius: 8px">Halal options</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FEATURES BENTO -->
+<section id="features" class="hh-section" style="background: #FAF8F6; padding: 104px 24px; scroll-margin-top: 70px">
+<div style="max-width: 1240px; margin: 0 auto">
+<div class="hh-reveal" style="max-width: 780px; margin: 0 0 52px">
+<div style="color: #B5121F; font-weight: 700; font-size: 14px; letter-spacing: 2px">EVERYTHING HALAL, ONE APP</div>
+<h2 class="hh-h2" style="margin: 12px 0 14px; font-size: 52px; line-height: 1.06; font-weight: 900; letter-spacing: -1.5px">Built for how we <span style="color: #D7263D">actually</span> eat out.</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #57546A">Made by the community, for the community. Honest reviews from people who eat halal, not paid hype.</p>
+</div>
+
+<div class="hh-bento" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 22px">
+
+<div class="hh-lift" style="grid-column: span 4; background: #FFFFFF; border-radius: 28px; overflow: hidden; border: 1px solid #ECE7E2; display: flex; flex-direction: column">
+<div aria-hidden="true" style="height: 290px; background: #F3EEE8; position: relative; overflow: hidden; background-image: linear-gradient(#E8DED2 2px, transparent 2px), linear-gradient(90deg, #E8DED2 2px, transparent 2px); background-size: 52px 52px">
+<div style="position: absolute; left: -5%; top: 46%; width: 110%; height: 22px; background: #FFFFFF; transform: rotate(-7deg)"></div>
+<div style="position: absolute; left: 58%; top: -10%; width: 20px; height: 130%; background: #FFFFFF; transform: rotate(14deg)"></div>
+<div style="position: absolute; left: 4%; top: 8%; width: 150px; height: 84px; border-radius: 18px; background: #DDEBD3"></div>
+<span style="position: absolute; left: 16%; top: 58%; width: 28px; height: 28px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #F28C28; border: 3px solid #FFFFFF; box-shadow: 0 4px 8px rgba(0,0,0,.2)"></span>
+<span style="position: absolute; left: 34%; top: 22%; width: 28px; height: 28px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #7A0A12; border: 3px solid #FFFFFF; box-shadow: 0 4px 8px rgba(0,0,0,.2)"></span>
+<span style="position: absolute; left: 76%; top: 26%; width: 28px; height: 28px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #E0528F; border: 3px solid #FFFFFF; box-shadow: 0 4px 8px rgba(0,0,0,.2)"></span>
+<span style="position: absolute; left: 84%; top: 66%; width: 28px; height: 28px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #8B5E3C; border: 3px solid #FFFFFF; box-shadow: 0 4px 8px rgba(0,0,0,.2)"></span>
+<span style="position: absolute; left: 30%; top: 74%; width: 28px; height: 28px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #2E86AB; border: 3px solid #FFFFFF; box-shadow: 0 4px 8px rgba(0,0,0,.2)"></span>
+<span class="hh-ripple" style="position: absolute; left: calc(52% - 30px); top: calc(56% - 30px); width: 60px; height: 60px; border-radius: 50%; background: #D7263D"></span>
+<span style="position: absolute; left: calc(52% - 11px); top: calc(56% - 11px); width: 22px; height: 22px; border-radius: 50%; background: #D7263D; border: 4px solid #FFFFFF; box-shadow: 0 4px 10px rgba(122,10,18,.4)"></span>
+<div style="position: absolute; right: 18px; bottom: 18px; background: #FFFFFF; border-radius: 16px; padding: 12px 14px; display: flex; gap: 10px; align-items: center; box-shadow: 0 10px 24px rgba(0,0,0,.14)">
+<span style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #8E0B16, #D7263D); color: #FFFFFF; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">GR</span>
+<span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 13px; font-weight: 700; color: #1C1B29">Grill Republic <span style="font-size: 9px; background: #ECE8FC; color: #5B3FD6; padding: 2px 5px; border-radius: 5px; font-weight: 700">DEMO</span></span><span style="font-size: 11px; color: #17714A; font-weight: 600">Certified · 0.4 mi</span></span>
+</div>
+</div>
+<div style="padding: 26px 30px 30px">
+<h3 style="margin: 0 0 8px; font-size: 24px; font-weight: 700">Every halal spot, on one map</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B6878">Colour-coded pins for restaurants, takeaways, cafés, desserts, food trucks and butchers. Tap one for its badge, reviews and directions.</p>
+</div>
+</div>
+
+<div class="hh-lift" style="grid-column: span 2; background: linear-gradient(160deg, #E07B1F, #F7963B); border-radius: 28px; overflow: hidden; color: #1C1B29; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; position: relative">
+<div aria-hidden="true" style="position: absolute; right: -50px; top: -50px; width: 200px; height: 200px; border-radius: 50%; background: rgba(255,255,255,.2)"></div>
+<div aria-hidden="true" style="position: relative; display: flex; flex-direction: column; gap: 14px">
+<span style="width: 88px; height: 88px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 24px rgba(122,10,18,.25)"><svg width="44" height="44" viewBox="0 0 24 24" fill="#D7263D"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg></span>
+<div style="background: rgba(255,255,255,.35); border-radius: 999px; height: 14px; overflow: hidden"><div style="width: 68%; height: 100%; background: #7A0A12; border-radius: 999px"></div></div>
+<div style="font-size: 13px; font-weight: 600">Your Hunt Score is climbing</div>
+</div>
+<div style="position: relative">
+<h3 style="margin: 0 0 8px; font-size: 24px; font-weight: 800">Hunt Score rewards</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55">Earn points and badges for every review and every spot you add. The more you hunt, the higher you climb.</p>
+</div>
+</div>
+
+<div class="hh-lift" style="grid-column: span 2; background: #FFFFFF; border-radius: 28px; overflow: hidden; border: 1px solid #ECE7E2">
+<div aria-hidden="true" style="height: 180px; background: #FFF6EC; padding: 26px 24px; display: flex; flex-wrap: wrap; gap: 9px; align-content: center">
+<span style="background: #D7263D; color: #FFFFFF; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 999px">Fully halal only</span>
+<span style="background: #D7263D; color: #FFFFFF; font-weight: 600; font-size: 13px; padding: 8px 14px; border-radius: 999px">No alcohol</span>
+<span style="background: #FFFFFF; border: 1px solid #FCD9B4; font-weight: 500; font-size: 13px; padding: 8px 14px; border-radius: 999px">Certified</span>
+<span style="background: #FFFFFF; border: 1px solid #FCD9B4; font-weight: 500; font-size: 13px; padding: 8px 14px; border-radius: 999px">Peri peri</span>
+<span style="background: #FFFFFF; border: 1px solid #FCD9B4; font-weight: 500; font-size: 13px; padding: 8px 14px; border-radius: 999px">Top rated</span>
+</div>
+<div style="padding: 24px 26px 28px">
+<h3 style="margin: 0 0 8px; font-size: 21px; font-weight: 700">Filters that matter</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6B6878">Filter by fully halal, no alcohol, evidence level, cuisine and type of place.</p>
+</div>
+</div>
+
+<div class="hh-lift" style="grid-column: span 2; background: #FFFFFF; border-radius: 28px; overflow: hidden; border: 1px solid #ECE7E2">
+<div aria-hidden="true" style="height: 180px; background: #FDE7E7; padding: 20px 22px; display: flex; align-items: center">
+<div style="background: #FFFFFF; border-radius: 16px; padding: 14px 16px; width: 100%; box-shadow: 0 8px 18px rgba(122,10,18,.12); ">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="width: 34px; height: 34px; border-radius: 50%; background: #F7963B; color: #1C1B29; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 14px">Y</span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 13px; font-weight: 600">Yusuf <span style="font-size: 9px; background: #ECE8FC; color: #5B3FD6; padding: 2px 5px; border-radius: 5px; font-weight: 700">DEMO</span></span><span style="font-size: 12px; color: #D7263D; letter-spacing: 1px">★★★★★</span></span>
+</div>
+<p style="margin: 8px 0 8px; font-size: 13px; line-height: 1.45; color: #1C1B29">Best smash burger in town, and the certificate's on the wall.</p>
+<div style="display: flex; gap: 16px; font-size: 12px; color: #6B6878"><span style="color: #D7263D; font-weight: 600">♥ 24</span><span>Comment</span><span>Share</span></div>
+</div>
+</div>
+<div style="padding: 24px 26px 28px">
+<h3 style="margin: 0 0 8px; font-size: 21px; font-weight: 700">A feed of real reviews</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6B6878">Reviews work like posts: you can like, comment and follow people whose taste you trust.</p>
+</div>
+</div>
+
+<div class="hh-lift" style="grid-column: span 2; background: #FFFFFF; border-radius: 28px; overflow: hidden; border: 1px solid #ECE7E2">
+<div aria-hidden="true" style="height: 180px; background: #E3F4EB; display: flex; align-items: center; justify-content: center">
+<svg width="118" height="118" viewBox="0 0 64 64" fill="none" stroke="#1E8E5A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6v6"></path><path d="M20 30c0-8 6-12 12-16 6 4 12 8 12 16"></path><path d="M16 30h32v26H16z"></path><path d="M28 56V44a4 4 0 0 1 8 0v12"></path><path d="M8 56V26l3-5 3 5v30"></path><path d="M50 56V26l3-5 3 5v30"></path><path d="M4 56h56"></path></svg>
+</div>
+<div style="padding: 24px 26px 28px">
+<h3 style="margin: 0 0 8px; font-size: 21px; font-weight: 700">Mosques near your meal</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6B6878">Out for food at prayer time? See mosques close by, right alongside the restaurants.</p>
+</div>
+</div>
+
+<div class="hh-lift" style="grid-column: span 3; background: #7A0A12; color: #FFFFFF; border-radius: 28px; overflow: hidden; padding: 32px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap">
+<div style="flex: 1 1 220px">
+<div style="font-size: 64px; font-weight: 900; line-height: 1; color: #F7963B; letter-spacing: -2px">1,900+</div>
+<h3 style="margin: 10px 0 8px; font-size: 22px; font-weight: 700">Halal butchers too</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,.9)">It's not just for eating out. Find a halal butcher near you for the weekly shop.</p>
+</div>
+<svg aria-hidden="true" width="104" height="104" viewBox="0 0 64 64" fill="none" stroke="#FCD9B4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto"><path d="M6 24 10 10h44l4 14"></path><path d="M6 24a7 7 0 0 0 13 0 7 7 0 0 0 13 0 7 7 0 0 0 13 0 7 7 0 0 0 13 0"></path><path d="M10 30v24h44V30"></path><path d="M26 54V40h12v14"></path></svg>
+</div>
+
+<div class="hh-lift" style="grid-column: span 3; background: #FFFFFF; border-radius: 28px; overflow: hidden; border: 1px solid #ECE7E2; padding: 28px; display: flex; gap: 22px; align-items: center; flex-wrap: wrap">
+<div aria-hidden="true" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 9px">
+<div style="background: #FFF6EC; border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600"><span style="color: #D7263D">♥</span>Date night spots<span style="margin-left: auto; color: #6B6878; font-weight: 400; font-size: 12px">12 places</span></div>
+<div style="background: #FFF6EC; border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600"><span style="color: #A85A12">♥</span>Best wings in Brum<span style="margin-left: auto; color: #6B6878; font-weight: 400; font-size: 12px">8 places</span></div>
+<div style="background: #FFF6EC; border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600"><span style="color: #7A0A12">♥</span>Eid treats<span style="margin-left: auto; color: #6B6878; font-weight: 400; font-size: 12px">5 places</span></div>
+</div>
+<div style="flex: 1 1 200px">
+<h3 style="margin: 0 0 8px; font-size: 22px; font-weight: 700">Save, list and share</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #6B6878">Build lists and send a spot to the group chat in one tap. No more "where shall we eat?"</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WHY TRUST US -->
+<section id="trust" class="hh-section" style="background: #1C1B29; color: #FFFFFF; padding: 104px 24px; position: relative; overflow: hidden; scroll-margin-top: 70px">
+<div aria-hidden="true" style="position: absolute; left: -160px; bottom: -160px; width: 480px; height: 480px; border-radius: 50%; background: #D7263D; opacity: .18"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto">
+<div class="hh-split hh-reveal" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: end; margin-bottom: 52px">
+<div>
+<div style="color: #F7963B; font-weight: 700; font-size: 14px; letter-spacing: 2px">NO SMOKE, NO MIRRORS</div>
+<h2 class="hh-h2" style="margin: 12px 0 0; font-size: 52px; line-height: 1.06; font-weight: 900; letter-spacing: -1.5px">Why you can <span style="color: #F7963B">trust us.</span></h2>
+</div>
+<p style="margin: 0; font-size: 19px; line-height: 1.65; color: #D6D3DE">Anyone can slap "halal" on a listing. We'd rather show you <strong style="color: #FFFFFF">Unverified</strong> than pretend to know something we don't. Here is exactly how Hunt Halal works.</p>
+</div>
+
+<div class="hh-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div class="hh-lift" style="background: #26262D; border: 1px solid #33333B; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="width: 54px; height: 54px; border-radius: 16px; background: #16352A; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3DBB80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">We show the evidence</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C6D3">Every listing carries one of four badges, so you always know how its halal status is known and how sure we are.</p>
+</div>
+<div class="hh-lift" style="background: #26262D; border: 1px solid #33333B; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="width: 54px; height: 54px; border-radius: 16px; background: #3A2E14; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E0A84A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"></ellipse><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"></path><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Real places, open sources</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C6D3">Listings come from OpenStreetMap, the Food Standards Agency's business register and Overture Maps, plus places added by the community.</p>
+</div>
+<div class="hh-lift" style="background: #26262D; border: 1px solid #33333B; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="width: 54px; height: 54px; border-radius: 16px; background: #1C2C48; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6A9CF0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">A person checks it</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C6D3">Every place you suggest is reviewed before it goes live, and every reported post is looked at by a real person.</p>
+</div>
+<div class="hh-lift" style="background: #26262D; border: 1px solid #33333B; border-radius: 24px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="width: 54px; height: 54px; border-radius: 16px; background: #3D1A1F; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F7A04F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0"></path></svg></span>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">Look before you sign up</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C6D3">Browse everything as a guest. You only need an account when you want to review, save favourites or earn Hunt Score.</p>
+</div>
+</div>
+
+<div class="hh-reveal" style="margin-top: 28px; background: #26262D; border: 1px dashed #57546A; border-radius: 20px; padding: 20px 24px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap">
+<img src="/assets/mascot.png" alt="" style="width: 44px; height: 54px; object-fit: contain">
+<p style="margin: 0; flex: 1 1 320px; font-size: 15px; line-height: 1.6; color: #D6D3DE"><strong style="color: #FFFFFF">Our honest small print:</strong> halal information can change. Chains switch suppliers and certificates expire. If it matters to you, always check with the business. We'll always tell you how much we know.</p>
+<a href="mailto:contact@hunthalal.com" style="color: #F7A04F; font-weight: 600; font-size: 15px">Got a question? contact@hunthalal.com</a>
+</div>
+</div>
+</section>
+
+<!-- JOIN THE HUNT -->
+<section class="hh-section" style="background: #D7263D; color: #FFFFFF; padding: 100px 24px; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.09) 1.6px, transparent 1.6px); background-size: 26px 26px"></div>
+<div aria-hidden="true" style="position: absolute; left: -120px; top: -120px; width: 380px; height: 380px; border-radius: 50%; background: #7A0A12; opacity: .45"></div>
+<div class="hh-split" style="position: relative; max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: center">
+<div style="display: flex; justify-content: center"><img class="hh-drift" src="/assets/mascot-balloons.png" alt="The Hunt Halal chicken holding balloons" style="width: 320px; max-width: 80%; filter: drop-shadow(0 24px 26px rgba(60,0,8,.4))"></div>
+<div class="hh-reveal" style="display: flex; flex-direction: column; gap: 20px">
+<div style="color: #FCD9B4; font-weight: 700; font-size: 14px; letter-spacing: 2px">JOIN THE HUNT</div>
+<h2 class="hh-h2" style="margin: 0; font-size: 52px; line-height: 1.06; font-weight: 900; letter-spacing: -1.5px">Know a gem we've missed? Put it on the map.</h2>
+<p style="margin: 0; font-size: 19px; line-height: 1.65">Hunt Halal gets better with every review and every spot you suggest. Each one earns you Hunt Score points and helps the next hungry person find it.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap">
+<div style="flex: 1 1 210px; background: #B5121F; border: 1px solid rgba(255,255,255,.3); border-radius: 18px; padding: 20px"><div style="font-weight: 700; font-size: 18px">Review a spot</div><div style="font-size: 14px; margin-top: 4px; color: #FDE7E7">Earn Hunt Score points for every review</div></div>
+<div style="flex: 1 1 210px; background: #B5121F; border: 1px solid rgba(255,255,255,.3); border-radius: 18px; padding: 20px"><div style="font-weight: 700; font-size: 18px">Add a halal spot</div><div style="font-size: 14px; margin-top: 4px; color: #FDE7E7">You suggest it, we check it, everyone finds it</div></div>
+</div>
+<a href="#download" class="hh-cta hh-main-cta" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; background: #FFFFFF; color: #B5121F; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 28px; border-radius: 999px; min-height: 52px; box-shadow: 0 12px 24px rgba(60,0,8,.3)">Start hunting
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- FOR BUSINESSES -->
+<section id="business" class="hh-section" style="background: #FFF6EC; padding: 104px 24px; scroll-margin-top: 70px">
+<div class="hh-split" style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center">
+<div class="hh-reveal" style="display: flex; flex-direction: column; gap: 18px">
+<div style="color: #B5121F; font-weight: 700; font-size: 14px; letter-spacing: 2px">FOR HALAL BUSINESSES</div>
+<h2 class="hh-h2" style="margin: 0; font-size: 52px; line-height: 1.06; font-weight: 900; letter-spacing: -1.5px">Your customers are already looking for you.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #57546A">Claim your listing, add your halal certificate or supplier details, and earn the <strong style="color: #2464C8">Owner confirmed</strong> or <strong style="color: #17714A">Certified</strong> badge. Add your menu, photos and socials so hungry people pick you.</p>
+<a href="mailto:contact@hunthalal.com?subject=Claim%20my%20Hunt%20Halal%20listing" class="hh-cta hh-main-cta" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; background: #D7263D; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 28px; border-radius: 999px; min-height: 52px; box-shadow: 0 10px 22px rgba(122,10,18,.25)">Claim your listing</a>
+</div>
+<div class="hh-lift" style="background: #FFFFFF; border-radius: 28px; padding: 30px; box-shadow: 0 24px 50px rgba(122,10,18,.14); display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 14px">
+<span style="width: 62px; height: 62px; border-radius: 50%; background: linear-gradient(135deg, #8E0B16, #D7263D); color: #FFFFFF; font-weight: 700; font-size: 22px; display: flex; align-items: center; justify-content: center">YB</span>
+<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 21px; font-weight: 700">Your Business</span><span style="font-size: 14px; color: #6B6878"><span style="color: #D7263D; font-weight: 600">Restaurant</span> · Your town</span></div>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span style="background: #E3F4EB; color: #17714A; font-weight: 600; font-size: 13px; padding: 6px 12px; border-radius: 8px">Certified · fully halal</span>
+<span style="background: #FFF6EC; border: 1px solid #FCD9B4; color: #A85A12; font-weight: 600; font-size: 13px; padding: 6px 12px; border-radius: 8px">No alcohol</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+<div style="background: #FAF8F6; border-radius: 12px; padding: 16px 8px; text-align: center; font-size: 13px; font-weight: 600">Menu</div>
+<div style="background: #FAF8F6; border-radius: 12px; padding: 16px 8px; text-align: center; font-size: 13px; font-weight: 600">Photos</div>
+<div style="background: #FAF8F6; border-radius: 12px; padding: 16px 8px; text-align: center; font-size: 13px; font-weight: 600">Directions</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="hh-section" style="background: #FFFFFF; padding: 104px 24px; scroll-margin-top: 70px">
+<div style="max-width: 860px; margin: 0 auto">
+<div class="hh-reveal" style="text-align: center; margin-bottom: 44px">
+<div style="color: #B5121F; font-weight: 700; font-size: 14px; letter-spacing: 2px">GOOD QUESTIONS</div>
+<h2 class="hh-h2" style="margin: 12px 0 0; font-size: 52px; line-height: 1.06; font-weight: 900; letter-spacing: -1.5px">Before you download</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+<div style="{{ f.boxStyle }}">
+<button type="button" onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width: 100%; border: 0; background: transparent; cursor: pointer; font: inherit; color: #1C1B29; text-align: left; padding: 20px 22px; min-height: 62px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 18px; font-weight: 600">
+{{ f.q }}
+<span aria-hidden="true" style="{{ f.iconStyle }}">+</span>
+</button>
+<sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+<p class="hh-fade" style="margin: 0; padding: 0 22px 22px; font-size: 16px; line-height: 1.7; color: #57546A">{{ f.a }}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="download" class="hh-section" style="scroll-margin-top: 60px; background: #F7963B; padding: 100px 24px 0; position: relative; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(122,10,18,.1) 1.6px, transparent 1.6px); background-size: 26px 26px"></div>
+<div aria-hidden="true" class="hh-cloud" style="position: absolute; left: 8%; top: 50px; width: 180px; height: 50px; border-radius: 999px; background: rgba(255,255,255,.35); box-shadow: 44px -20px 0 -6px rgba(255,255,255,.35)"></div>
+<div aria-hidden="true" class="hh-cloud2" style="position: absolute; right: 30%; top: 30px; width: 130px; height: 38px; border-radius: 999px; background: rgba(255,255,255,.3); box-shadow: -36px -16px 0 -6px rgba(255,255,255,.3)"></div>
+<div class="hh-split" style="position: relative; max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 48px; align-items: end; color: #1C1B29">
+<div style="display: flex; flex-direction: column; gap: 22px; padding-bottom: 96px">
+<h2 class="hh-h2" style="margin: 0; font-size: 72px; line-height: 1; font-weight: 900; letter-spacing: -2.5px">Your next halal meal is <span style="color: #7A0A12">three taps away.</span></h2>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; max-width: 600px; font-weight: 500">Stop wondering. Start hunting. Thousands of halal places, honest badges and real reviews, in your pocket.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center">
+<a href="{{ appStoreHref }}" class="hh-store" aria-label="{{ storeTop }} App Store" style="display: flex; align-items: center; gap: 12px; background: #1C1B29; color: #FFFFFF; text-decoration: none; padding: 10px 22px 10px 16px; border-radius: 14px; min-height: 60px; min-width: 184px">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"></rect><path d="M11 18h2"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.15"><span style="font-size: 11px; opacity: .85">{{ storeTop }}</span><span style="font-size: 19px; font-weight: 600">App Store</span></span>
+</a>
+<a href="{{ playHref }}" class="hh-store" aria-label="{{ playTop }} Google Play" style="display: flex; align-items: center; gap: 12px; background: #1C1B29; color: #FFFFFF; text-decoration: none; padding: 10px 22px 10px 16px; border-radius: 14px; min-height: 60px; min-width: 184px">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5v17l14-8.5z"></path><path d="M5 3.5 14 12 5 20.5"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.15"><span style="font-size: 11px; opacity: .85">{{ playTop }}</span><span style="font-size: 19px; font-weight: 600">Google Play</span></span>
+</a>
+<sc-if value="{{ showQr }}" hint-placeholder-val="{{ false }}">
+<div class="hh-hide-sm" style="background: #FFFFFF; border-radius: 16px; padding: 10px; display: flex; align-items: center; gap: 12px; box-shadow: 0 12px 26px rgba(122,10,18,.25)">
+<div style="width: 78px; height: 78px; border-radius: 10px; border: 2px dashed #E07B1F; background: #FFF6EC; display: flex; align-items: center; justify-content: center; text-align: center; color: #A85A12; font-size: 10px; font-weight: 700; padding: 4px">[QR CODE]</div>
+<span style="font-size: 13px; font-weight: 600; max-width: 96px; line-height: 1.3">Scan with your phone camera</span>
+</div>
+</sc-if>
+</div>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 15px; font-weight: 600">
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7A0A12" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Free to download</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7A0A12" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>No account needed to browse</span>
+</div>
+</div>
+<div style="display: flex; justify-content: center; align-items: flex-end">
+<img class="hh-float" src="/assets/mascot.png" alt="The Hunt Halal chicken parachuting down" style="width: 300px; max-width: 80%; margin-bottom: 40px; filter: drop-shadow(0 24px 24px rgba(122,10,18,.35))">
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="hh-foot" style="background: #1C1B29; color: #FFFFFF; padding: 64px 24px 36px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 380px">
+<img src="/assets/wordmark.png" alt="Hunt Halal" style="height: 30px; width: auto; align-self: flex-start">
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #C9C6D3">The UK's halal food finder. Made by the community, for the community.</p>
+<p style="margin: 0; font-size: 13px; line-height: 1.6; color: #AAA7B6">Hunt Halal is a product of DTA Digital Studio Ltd, registered in England and Wales, company no. 17585395. Registered office: The Globe Centre, St James Square, Accrington, BB5 0RE.</p>
+</div>
+<div style="display: flex; gap: 56px; flex-wrap: wrap; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700; color: #FFFFFF">App</span><a href="#badges">Halal badges</a><a href="#features">Features</a><a href="#finder">Find food</a><a href="#download">Download</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700; color: #FFFFFF">Business</span><a href="mailto:contact@hunthalal.com?subject=Claim%20my%20Hunt%20Halal%20listing">Claim your listing</a><a href="mailto:contact@hunthalal.com?subject=Halal%20certificate%20for%20my%20business">Send your certificate</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700; color: #FFFFFF">Trust</span><a href="#trust">Why trust us</a><a href="https://hunthalal.com/privacy">Privacy policy</a><a href="https://hunthalal.com/terms">Terms of use</a><a href="https://hunthalal.com/delete-account">Delete your account</a><a href="mailto:contact@hunthalal.com">contact@hunthalal.com</a></div>
+</div>
+</div>
+<div style="border-top: 1px solid #33333B; padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #AAA7B6">
+<span>© 2026 DTA Digital Studio Ltd. All rights reserved.</span>
+<span>Places data includes © OpenStreetMap contributors. Halal information can change, so always check with the business.</span>
+</div>
+</div>
+</footer>
+
+<!-- MOBILE STICKY DOWNLOAD BAR (phones only) -->
+<div class="hh-mobilebar" style="position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 40; background: #FFFFFF; border-radius: 20px; padding: 10px 12px; align-items: center; gap: 12px; box-shadow: 0 16px 36px rgba(28,27,41,.35); border: 1px solid #ECE7E2">
+<img src="/assets/icon.png" alt="" style="width: 46px; height: 46px; border-radius: 12px; object-fit: cover">
+<span style="display: flex; flex-direction: column; line-height: 1.25; flex: 1 1 auto"><span style="font-size: 15px; font-weight: 700">Hunt Halal</span><span style="font-size: 12px; color: #6B6878">Free · Halal food near you</span></span>
+<a href="#download" style="background: #D7263D; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 46px; display: flex; align-items: center">Get</a>
+</div>
+
+</div>
+</template>
+<script src="/runtime.js"></script>
+<script>
+/* ===== When the app is in the stores, paste the two links here (keep the quotes) ===== */
+var SITE = {
+  appStoreUrl: '',
+  playUrl: ''
+};
+/* ===================================================================================== */
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { q: '', crave: 0, page: 0, data: null, failed: false, faq: 0, badge: 0, t: 0, bird: 'intro', msg: 0, showMsg: false, showFeathers: false };
+  }
+  componentDidMount() {
+    var self = this;
+    try {
+      fetch('/places.json').then(function (r) { return r.json(); }).then(function (d) { self.setState({ data: d }); }).catch(function () { self.setState({ failed: true }); });
+    } catch (e) { this.setState({ failed: true }); }
+    var reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (reduce || !window.requestAnimationFrame) { this.setState({ t: 1 }); return; }
+    var start = null;
+    var step = function (now) {
+      if (start === null) start = now;
+      var p = Math.min(1, (now - start) / 1800);
+      self.setState({ t: 1 - Math.pow(1 - p, 3) });
+      if (p < 1) self._raf = window.requestAnimationFrame(step);
+    };
+    this._raf = window.requestAnimationFrame(step);
+  }
+  componentWillUnmount() {
+    if (this._raf && window.cancelAnimationFrame) window.cancelAnimationFrame(this._raf);
+    clearTimeout(this._t1); clearTimeout(this._t2); clearTimeout(this._t3); clearTimeout(this._t4); clearTimeout(this._t5);
+  }
+  renderVals() {
+    var self = this;
+    var appUrl = this.props.appStoreUrl || '';
+    var playUrl = this.props.playUrl || '';
+    var launched = (this.props.launched ?? false) || !!(appUrl && playUrl);
+    var t = this.state.t;
+    var fmt = function (n) { return Math.round(n * t).toLocaleString('en-GB'); };
+
+    var MSGS = ['Back! I smelled wings.', 'Just checking on Bradford.', 'Found a new spot!', 'Okay, okay, I am staying.'];
+    var fly = function () {
+      if (self.state.bird === 'away' || self.state.bird === 'back') return;
+      self.setState({ bird: 'away', showMsg: false, showFeathers: true });
+      clearTimeout(self._t1); clearTimeout(self._t2); clearTimeout(self._t3); clearTimeout(self._t4); clearTimeout(self._t5);
+      self._t1 = setTimeout(function () { self.setState({ bird: 'back' }); }, 1550);
+      self._t5 = setTimeout(function () { self.setState({ showFeathers: false }); }, 2700);
+      self._t2 = setTimeout(function () { self.setState({ bird: 'idle' }); }, 4500);
+      self._t3 = setTimeout(function () { self.setState({ showMsg: true }); }, 3900);
+      self._t4 = setTimeout(function () { self.setState({ showMsg: false, msg: self.state.msg + 1 }); }, 7600);
+    };
+    var bird = this.state.bird;
+    var goFinder = function () {
+      try { var el = document.getElementById('finder'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) {}
+    };
+    var D = this.state.data || [];
+    var loaded = !!this.state.data;
+    var CATS = [
+      { l: 'Fast food', c: '#C4650F' }, { l: 'Restaurant', c: '#D7263D' }, { l: 'Food truck', c: '#1F6F91' },
+      { l: 'Desserts', c: '#B0356B' }, { l: 'Café', c: '#8B5E3C' }, { l: 'Butcher', c: '#7A0A12' }
+    ];
+    var BASIS = ['Tagged halal', 'Name says halal', 'Halal chain', 'Listed as halal'];
+    var CRAVE = [
+      { l: 'Everything' },
+      { l: 'Chicken', re: /chicken|peri|wings/i },
+      { l: 'Burgers', re: /burger/i },
+      { l: 'Kebab and grill', re: /kebab|grill|shawarma|turkish/i },
+      { l: 'Curry', re: /indian|curry|pakistani/i },
+      { l: 'Desserts', cat: 3, re: /dessert|waffle|cake|ice cream/i },
+      { l: 'Butchers', cat: 5 }
+    ];
+    var TOWNS = ['London', 'Birmingham', 'Manchester', 'Bradford', 'Leicester', 'Glasgow', 'Leeds', 'Bolton', 'Luton'];
+    var rawQ = this.state.q.trim();
+    var q = rawQ.toLowerCase();
+    var crave = Math.min(this.state.crave, CRAVE.length - 1);
+    var key = q + '|' + crave + '|' + D.length;
+    if (!this._cache || this._cache.key !== key) {
+      var C = CRAVE[crave];
+      var full = q.match(/^([a-z]{1,2}\d[a-z\d]?)\s*\d[a-z]{2}$/);
+      var district = full ? full[1].toUpperCase() : (/^[a-z]{1,2}\d[a-z\d]?$/.test(q) ? q.toUpperCase() : null);
+      var scored = [];
+      for (var i = 0; i < D.length; i++) {
+        var row = D[i];
+        if (crave > 0 && !((C.cat !== undefined && row[1] === C.cat) || (C.re && C.re.test(row[5])))) continue;
+        var sc = 1;
+        if (q) {
+          sc = 0;
+          if (district) { if (row[4] === district) sc = 5; }
+          else {
+            var town = row[2].toLowerCase(), area = row[3].toLowerCase();
+            if (town === q) sc = 4;
+            else if (town.indexOf(q) === 0 || area === q) sc = 3;
+            else if (town.indexOf(q) >= 0 || area.indexOf(q) >= 0) sc = 2;
+            else if (row[0].toLowerCase().indexOf(q) >= 0 || row[5].toLowerCase().indexOf(q) >= 0) sc = 1;
+          }
+        }
+        if (sc > 0) scored.push({ row: row, sc: sc, i: i });
+      }
+      if (q) scored.sort(function (a, b) { return b.sc - a.sc || a.i - b.i; });
+      else scored.sort(function (a, b) { return ((a.i * 7919) % 5351) - ((b.i * 7919) % 5351); });
+      this._cache = { key: key, list: scored };
+    }
+    var list = this._cache.list;
+    var n = list.length;
+    var off = n > 6 ? (this.state.page * 6) % n : 0;
+    var shown = [];
+    for (var k = 0; k < Math.min(6, n); k++) shown.push(list[(off + k) % n].row);
+    var initials = function (name) {
+      var w = name.replace(/[^A-Za-z0-9 ]+/g, ' ').split(/\s+/).filter(function (x) { return x && !/^(the|ltd|limited|and|of|halal|restaurant|takeaway)$/i.test(x); });
+      if (!w.length) w = [name];
+      return w.slice(0, 2).map(function (x) { return x.charAt(0).toUpperCase(); }).join('');
+    };
+    var results = shown.map(function (row) {
+      var cat = CATS[row[1]];
+      var where = row[3] && row[3] !== row[2] ? row[3] + ', ' + row[2] : row[2];
+      return {
+        name: row[0],
+        initials: initials(row[0]),
+        cat: cat.l,
+        where: where,
+        extra: row[5] ? row[4] + ' · ' + row[5] : row[4],
+        basis: BASIS[row[6]],
+        catStyle: 'font-weight: 600; color: ' + cat.c,
+        logoStyle: 'flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 17px; background: ' + cat.c
+      };
+    });
+    var chipOn = 'border: 2px solid #D7263D; background: #D7263D; color: #FFFFFF; font: inherit; font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 999px; cursor: pointer; min-height: 44px; white-space: nowrap; line-height: 1.2';
+    var chipOff = 'border: 2px solid #FCD9B4; background: #FFFFFF; color: #1C1B29; font: inherit; font-weight: 500; font-size: 14px; padding: 8px 16px; border-radius: 999px; cursor: pointer; min-height: 44px; white-space: nowrap; line-height: 1.2';
+    var towns = TOWNS.map(function (name) {
+      var on = q === name.toLowerCase();
+      return { name: name, pressed: on ? 'true' : 'false', style: on ? chipOn : chipOff, pick: function () { self.setState({ q: on ? '' : name, page: 0 }); } };
+    });
+    var cravings = CRAVE.map(function (c, i) {
+      var on = i === crave;
+      return { name: c.l, pressed: on ? 'true' : 'false', style: on ? chipOn : chipOff, pick: function () { self.setState({ crave: i, page: 0 }); } };
+    });
+    var nTxt = n.toLocaleString('en-GB');
+    var plural = n === 1 ? ' halal place' : ' halal places';
+    var resultLine = !loaded ? '' : (n === 0 ? 'No matches for “' + rawQ + '”' : (q ? nTxt + plural + ' found for “' + rawQ + '”' : 'A taste of ' + nTxt + plural + ' across the UK'));
+    var showResults = loaded && n > 0;
+    var showEmpty = loaded && n === 0;
+    var showLoading = !loaded && !this.state.failed;
+    var showMore = n > 6;
+    var more = n - shown.length;
+    var lockTitle = more > 0 ? '+ ' + more.toLocaleString('en-GB') + ' more' + (q ? ' for “' + rawQ + '”' : ' across the UK') + '. See every one in the app.' : 'See the full details in the app.';
+
+    var BADGES = [
+      { label: 'Certified', teaser: 'A certificate has been checked', color: '#17714A', bg: '#E3F4EB', level: 4, desc: 'A halal certificate has been checked, with the certifier and date shown.', meaning: 'The strongest evidence we show. You can see who certified it and when, right on the listing.' },
+      { label: 'Owner confirmed', teaser: 'The owner has shared supplier details', color: '#2464C8', bg: '#E4EDFB', level: 3, desc: 'The owner has provided their halal meat supplier details.', meaning: 'The business has put its name to it and told us where its meat comes from.' },
+      { label: 'Community reported', teaser: 'Several users have confirmed it', color: '#8F5E14', bg: '#FDF1DC', level: 2, desc: 'Several Hunt Halal users have confirmed it, but no certificate has been checked.', meaning: 'Fellow hunters vouch for it. It is worth asking at the counter if certification matters to you.' },
+      { label: 'Unverified', teaser: 'Listed, not yet confirmed', color: '#57546A', bg: '#EFEDF1', level: 1, desc: 'Listed but not yet confirmed. Always check with the business.', meaning: 'We list it so you can find it, but we will not pretend to know more. Ask before you order.' }
+    ];
+    var bsel = Math.min(this.state.badge, BADGES.length - 1);
+    var badges = BADGES.map(function (b, i) {
+      var on = i === bsel;
+      return {
+        label: b.label,
+        teaser: b.teaser,
+        pressed: on ? 'true' : 'false',
+        pick: function () { self.setState({ badge: i }); },
+        btnStyle: 'display: flex; align-items: center; gap: 16px; width: 100%; cursor: pointer; font: inherit; padding: 18px 20px; min-height: 84px; border-radius: 22px; transition: box-shadow .2s ease, border-color .2s ease; background: #FFFFFF; text-align: left; ' + (on ? 'border: 3px solid ' + b.color + '; box-shadow: 0 14px 30px rgba(122,10,18,.14)' : 'border: 3px solid transparent; box-shadow: 0 4px 10px rgba(0,0,0,.05)'),
+        iconStyle: 'flex: 0 0 auto; width: 50px; height: 50px; border-radius: 15px; display: flex; align-items: center; justify-content: center; background: ' + b.bg + '; color: ' + b.color
+      };
+    });
+    var B = BADGES[bsel];
+    var bars = [1, 2, 3, 4].map(function (n) {
+      return { style: 'display: block; width: 26px; height: 10px; border-radius: 999px; background: ' + (n <= B.level ? B.color : '#ECE7E2') };
+    });
+    var badge = {
+      label: B.label,
+      desc: B.desc,
+      meaning: B.meaning,
+      bars: bars,
+      pillStyle: 'font-weight: 700; font-size: 16px; padding: 8px 16px; border-radius: 10px; background: ' + B.bg + '; color: ' + B.color,
+      blobStyle: 'position: absolute; right: -90px; top: -90px; width: 260px; height: 260px; border-radius: 50%; transition: background .3s ease; background: ' + B.bg
+    };
+
+    var FAQ = [
+      { q: 'Is Hunt Halal free?', a: 'Yes. Hunt Halal is free to download and free to use on iPhone and Android.' },
+      { q: 'How do you know a place is halal?', a: 'Every place shows one of four badges: Certified (a certificate has been checked), Owner confirmed (the owner gave their halal supplier details), Community reported (several users have confirmed it) or Unverified (listed but not yet confirmed). You always know how sure we are.' },
+      { q: 'Where do your listings come from?', a: 'From open, public sources: OpenStreetMap, the Food Standards Agency business register and Overture Maps, plus places suggested by people using the app. Suggestions are checked before they go live.' },
+      { q: 'Do I need an account?', a: 'No. You can browse as a guest straight away. Create an account when you want to save favourites, write reviews and earn Hunt Score points.' },
+      { q: 'A place is missing or wrong. What can I do?', a: 'Use “Add a spot” in the app to suggest a missing place, or report a listing that looks wrong. A real person reviews it.' },
+      { q: 'Is it only in the UK?', a: 'For now, yes. Hunt Halal covers towns and cities right across the UK.' }
+    ];
+    var faqs = FAQ.map(function (f, i) {
+      var open = self.state.faq === i;
+      return {
+        q: f.q,
+        a: f.a,
+        open: open,
+        boxStyle: 'border-radius: 18px; overflow: hidden; transition: border-color .2s ease, background .2s ease; ' + (open ? 'border: 2px solid #D7263D; background: #FFFFFF; box-shadow: 0 12px 26px rgba(122,10,18,.1)' : 'border: 2px solid #ECE7E2; background: #FAF8F6'),
+        iconStyle: 'flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 500; transition: transform .25s ease; ' + (open ? 'background: #D7263D; color: #FFFFFF; transform: rotate(45deg)' : 'background: #FFFFFF; color: #D7263D; border: 1px solid #FCD9B4'),
+        toggle: function () { self.setState({ faq: open ? -1 : i }); }
+      };
+    });
+
+    return {
+      q: this.state.q,
+      typeQ: function (e) { self.setState({ q: e.target.value, page: 0 }); },
+      keyQ: function (e) { if (e.key === 'Enter') goFinder(); },
+      goFinder: goFinder,
+      towns: towns,
+      cravings: cravings,
+      results: results,
+      resultLine: resultLine,
+      showResults: showResults,
+      showMore: showMore,
+      nextPage: function () { self.setState({ page: self.state.page + 1 }); },
+      showEmpty: showEmpty,
+      showLoading: showLoading,
+      showFailed: self.state.failed,
+      lockTitle: lockTitle,
+      fly: fly,
+      birdX: bird === 'away' ? 'hh-fly-x' : (bird === 'back' ? 'hh-back-x' : ''),
+      birdY: bird === 'away' ? 'hh-fly-y' : (bird === 'back' ? 'hh-back-y' : (bird === 'intro' ? 'hh-drop' : '')),
+      birdSway: bird === 'intro' || bird === 'idle' ? 'hh-float' : '',
+      showFeathers: this.state.showFeathers,
+      showMsg: this.state.showMsg,
+      birdMsg: MSGS[this.state.msg % MSGS.length],
+      appStoreHref: appUrl || '#download',
+      playHref: playUrl || '#download',
+      showQr: false,
+      storeTop: launched ? 'Download on the' : 'Coming soon to the',
+      playTop: launched ? 'Get it on' : 'Coming soon to',
+      nPlaces: fmt(5000),
+      nButchers: fmt(1900),
+      nTowns: fmt(365),
+      badges: badges,
+      badge: badge,
+      faqs: faqs
+    };
+  }
+}
+startPage(Component, SITE);
+</script>
+</body>
+</html>
