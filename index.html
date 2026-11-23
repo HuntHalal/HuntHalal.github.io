@@ -3,16 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Hunt Halal: Find Halal Food Near You | Halal Restaurants & Butchers UK</title>
-<meta name="description" content="Find halal food near you: 5,000+ halal restaurants, takeaways, dessert spots and butchers across the UK, each showing how it is known to be halal. Free app, coming soon to iPhone and Android.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Halal Food Near You: Restaurants & Butchers UK | Hunt Halal</title>
+<meta name="description" content="Find halal food near you: 5,000+ halal restaurants, takeaways and butchers across the UK, each showing how it is known to be halal. Free app, coming soon.">
 <link rel="canonical" href="https://hunthalal.com/">
 <meta name="theme-color" content="#B5121F">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/assets/icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Hunt Halal">
-<meta property="og:title" content="Hunt Halal: Find Halal Food Near You | Halal Restaurants & Butchers UK">
-<meta property="og:description" content="Find halal food near you: 5,000+ halal restaurants, takeaways, dessert spots and butchers across the UK, each showing how it is known to be halal. Free app, coming soon to iPhone and Android.">
+<meta property="og:title" content="Halal Food Near You: Restaurants & Butchers UK | Hunt Halal">
+<meta property="og:description" content="Find halal food near you: 5,000+ halal restaurants, takeaways and butchers across the UK, each showing how it is known to be halal. Free app, coming soon.">
 <meta property="og:url" content="https://hunthalal.com/">
 <meta property="og:image" content="https://hunthalal.com/assets/share.png">
 <meta property="og:image:width" content="1024">
@@ -22,6 +26,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a,button,input{-webkit-tap-highlight-color:transparent}
+input,button{-webkit-appearance:none;appearance:none;border-radius:0}
+input::-webkit-search-cancel-button{display:none}
+.hh-mobilebar{bottom:12px;bottom:calc(12px + env(safe-area-inset-bottom, 0px))}
+
 body{margin:0;background:#FFFFFF;-webkit-font-smoothing:antialiased}
 html{scroll-behavior:smooth}
 a{color:#D7263D}a:hover{color:#B5121F}
@@ -151,7 +162,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #F796
 </div>
 
 
-<header style="background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid #ECE7E2; position: sticky; top: 0; z-index: 30">
+<header style="background: rgba(255,255,255,.94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid #ECE7E2; position: sticky; top: 0; z-index: 30">
 <nav class="hh-nav hh-navbar" aria-label="Main" style="max-width: 1240px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
 <a href="#top" aria-label="Hunt Halal home" style="display: flex; align-items: center; gap: 10px; flex: 0 0 auto">
 <img class="hh-logo-icon" src="/assets/icon.png" alt="" style="width: 42px; height: 42px; border-radius: 12px; object-fit: cover">
@@ -248,7 +259,7 @@ Search
 
 <div class="hh-pop hh-hide-sm" style="animation-delay: 2.2s; position: absolute; right: -14px; top: 130px; z-index: 4; background: #FFFFFF; border-radius: 16px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; box-shadow: 0 16px 32px rgba(40,0,6,.35); transform-origin: center">
 <span style="width: 36px; height: 36px; border-radius: 50%; background: #E3F4EB; display: flex; align-items: center; justify-content: center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1E8E5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
-<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 13px; font-weight: 700; color: #1E8E5A">Certified</span><span style="font-size: 11px; color: #6B6878">Certificate checked</span></span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 13px; font-weight: 700; color: #17714A">Certified</span><span style="font-size: 11px; color: #6B6878">Certificate checked</span></span>
 </div>
 <div class="hh-phone" role="img" aria-label="The Hunt Halal app's Home screen" style="position: relative; z-index: 2; width: 312px; background: #1C1B29; border-radius: 50px; padding: 11px; box-shadow: 0 50px 90px rgba(30,0,4,.6), inset 0 0 0 2px #3a3946; transform: rotate(2deg)">
 <div style="border-radius: 40px; overflow: hidden; background: #FAF8F6; color: #1C1B29; height: 640px; display: flex; flex-direction: column">
@@ -408,10 +419,10 @@ Show me 6 more</button>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 16px">
 
 <div class="hh-card hh-fade" style="background: #FFFFFF; border: 1px solid #ECE7E2; border-radius: 20px; padding: 18px; display: flex; gap: 14px; align-items: flex-start">
-<span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 17px; background: #C4650F">DC</span>
+<span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 17px; background: #A85A12">DC</span>
 <div style="display: flex; flex-direction: column; gap: 5px; min-width: 0">
 <span style="font-size: 17px; font-weight: 700; line-height: 1.25">Dixy Chicken</span>
-<span style="font-size: 14px; color: #57546A"><span style="font-weight: 600; color: #C4650F">Fast food</span> · Shobnall, Burton-on-Trent</span>
+<span style="font-size: 14px; color: #57546A"><span style="font-weight: 600; color: #A85A12">Fast food</span> · Shobnall, Burton-on-Trent</span>
 <span style="font-size: 13px; color: #6B6878">DE14 · Chicken</span>
 <span style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px">
 <span style="background: #FAF8F6; border: 1px solid #ECE7E2; color: #57546A; font-weight: 600; font-size: 12px; padding: 4px 9px; border-radius: 7px">Tagged halal</span>
@@ -421,10 +432,10 @@ Show me 6 more</button>
 </div>
 
 <div class="hh-card hh-fade" style="background: #FFFFFF; border: 1px solid #ECE7E2; border-radius: 20px; padding: 18px; display: flex; gap: 14px; align-items: flex-start">
-<span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 17px; background: #C4650F">SP</span>
+<span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 17px; background: #A85A12">SP</span>
 <div style="display: flex; flex-direction: column; gap: 5px; min-width: 0">
 <span style="font-size: 17px; font-weight: 700; line-height: 1.25">Salt &amp; Pepper</span>
-<span style="font-size: 14px; color: #57546A"><span style="font-weight: 600; color: #C4650F">Fast food</span> · Inverclyde Central, Inverclyde</span>
+<span style="font-size: 14px; color: #57546A"><span style="font-weight: 600; color: #A85A12">Fast food</span> · Inverclyde Central, Inverclyde</span>
 <span style="font-size: 13px; color: #6B6878">PA15</span>
 <span style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px">
 <span style="background: #FAF8F6; border: 1px solid #ECE7E2; color: #57546A; font-weight: 600; font-size: 12px; padding: 4px 9px; border-radius: 7px">Listed as halal</span>
@@ -460,10 +471,10 @@ Show me 6 more</button>
 </div>
 
 <div class="hh-card hh-fade" style="background: #FFFFFF; border: 1px solid #ECE7E2; border-radius: 20px; padding: 18px; display: flex; gap: 14px; align-items: flex-start">
-<span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 17px; background: #C4650F">SK</span>
+<span aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-weight: 700; font-size: 17px; background: #A85A12">SK</span>
 <div style="display: flex; flex-direction: column; gap: 5px; min-width: 0">
 <span style="font-size: 17px; font-weight: 700; line-height: 1.25">Shazmins Halal Kebab House</span>
-<span style="font-size: 14px; color: #57546A"><span style="font-weight: 600; color: #C4650F">Fast food</span> · Stoneygate, Leicester</span>
+<span style="font-size: 14px; color: #57546A"><span style="font-weight: 600; color: #A85A12">Fast food</span> · Stoneygate, Leicester</span>
 <span style="font-size: 13px; color: #6B6878">LE2 · Kebab</span>
 <span style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px">
 <span style="background: #FAF8F6; border: 1px solid #ECE7E2; color: #57546A; font-weight: 600; font-size: 12px; padding: 4px 9px; border-radius: 7px">Name says halal</span>
@@ -877,7 +888,7 @@ Is it only in the UK?
 </div>
 <nav aria-label="Halal food by town" style="border-top: 1px solid #33333B; padding-top: 28px; display: flex; flex-direction: column; gap: 14px">
 <span style="font-weight: 700; color: #FFFFFF; font-size: 15px">Halal food near you, by town</span>
-<div style="display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14px"><a href="https://hunthalal.com/halal-food/london">Halal food in London</a><a href="https://hunthalal.com/halal-food/birmingham">Halal food in Birmingham</a><a href="https://hunthalal.com/halal-food/manchester">Halal food in Manchester</a><a href="https://hunthalal.com/halal-food/bradford">Halal food in Bradford</a><a href="https://hunthalal.com/halal-food/leicester">Halal food in Leicester</a><a href="https://hunthalal.com/halal-food/glasgow-city">Halal food in Glasgow City</a><a href="https://hunthalal.com/halal-food/leeds">Halal food in Leeds</a><a href="https://hunthalal.com/halal-food/bolton">Halal food in Bolton</a><a href="https://hunthalal.com/halal-food/luton">Halal food in Luton</a><a href="https://hunthalal.com/halal-food/slough">Halal food in Slough</a><a href="https://hunthalal.com/halal-food/coventry">Halal food in Coventry</a><a href="https://hunthalal.com/halal-food/kirklees">Halal food in Kirklees</a><a href="https://hunthalal.com/halal-food/nottingham">Halal food in Nottingham</a><a href="https://hunthalal.com/halal-food/liverpool">Halal food in Liverpool</a><a href="https://hunthalal.com/halal-food/sheffield">Halal food in Sheffield</a><a href="https://hunthalal.com/halal-food/sandwell">Halal food in Sandwell</a><a href="https://hunthalal.com/halal-food/cardiff">Halal food in Cardiff</a><a href="https://hunthalal.com/halal-food/newcastle-upon-tyne">Halal food in Newcastle upon Tyne</a><a href="https://hunthalal.com/halal-food/blackburn-with-darwen">Halal food in Blackburn with Darwen</a><a href="https://hunthalal.com/halal-food/rochdale">Halal food in Rochdale</a><a href="https://hunthalal.com/halal-food/derby">Halal food in Derby</a><a href="https://hunthalal.com/halal-food/milton-keynes">Halal food in Milton Keynes</a><a href="https://hunthalal.com/halal-food/reading">Halal food in Reading</a><a href="https://hunthalal.com/halal-food/buckinghamshire">Halal food in Buckinghamshire</a><a href="https://hunthalal.com/halal-food/" style="font-weight: 700">All 82 towns</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14px"><a href="https://hunthalal.com/halal-food/london">Halal food in London</a><a href="https://hunthalal.com/halal-food/birmingham">Halal food in Birmingham</a><a href="https://hunthalal.com/halal-food/manchester">Halal food in Manchester</a><a href="https://hunthalal.com/halal-food/bradford">Halal food in Bradford</a><a href="https://hunthalal.com/halal-food/leicester">Halal food in Leicester</a><a href="https://hunthalal.com/halal-food/glasgow">Halal food in Glasgow</a><a href="https://hunthalal.com/halal-food/leeds">Halal food in Leeds</a><a href="https://hunthalal.com/halal-food/huddersfield-dewsbury-batley">Halal food in Huddersfield, Dewsbury &amp; Batley</a><a href="https://hunthalal.com/halal-food/bolton">Halal food in Bolton</a><a href="https://hunthalal.com/halal-food/luton">Halal food in Luton</a><a href="https://hunthalal.com/halal-food/slough">Halal food in Slough</a><a href="https://hunthalal.com/halal-food/coventry">Halal food in Coventry</a><a href="https://hunthalal.com/halal-food/nottingham">Halal food in Nottingham</a><a href="https://hunthalal.com/halal-food/liverpool">Halal food in Liverpool</a><a href="https://hunthalal.com/halal-food/edinburgh">Halal food in Edinburgh</a><a href="https://hunthalal.com/halal-food/sheffield">Halal food in Sheffield</a><a href="https://hunthalal.com/halal-food/west-bromwich-smethwick">Halal food in West Bromwich &amp; Smethwick</a><a href="https://hunthalal.com/halal-food/cardiff">Halal food in Cardiff</a><a href="https://hunthalal.com/halal-food/buckinghamshire">Halal food in Buckinghamshire</a><a href="https://hunthalal.com/halal-food/blackburn">Halal food in Blackburn</a><a href="https://hunthalal.com/halal-food/newcastle-upon-tyne">Halal food in Newcastle upon Tyne</a><a href="https://hunthalal.com/halal-food/bristol">Halal food in Bristol</a><a href="https://hunthalal.com/halal-food/rochdale">Halal food in Rochdale</a><a href="https://hunthalal.com/halal-food/derby">Halal food in Derby</a><a href="https://hunthalal.com/halal-food/" style="font-weight: 700">All 81 towns</a></div>
 </nav>
 <div style="border-top: 1px solid #33333B; padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #AAA7B6">
 <span>© 2026 DTA Digital Studio Ltd. All rights reserved.</span>
@@ -887,7 +898,7 @@ Is it only in the UK?
 </footer>
 
 
-<div class="hh-mobilebar " style="position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 40; background: #FFFFFF; border-radius: 20px; padding: 10px 12px; align-items: center; gap: 12px; box-shadow: 0 16px 36px rgba(28,27,41,.35); border: 1px solid #ECE7E2">
+<div class="hh-mobilebar " style="position: fixed; left: 12px; right: 12px; z-index: 40; background: #FFFFFF; border-radius: 20px; padding: 10px 12px; align-items: center; gap: 12px; box-shadow: 0 16px 36px rgba(28,27,41,.35); border: 1px solid #ECE7E2">
 <img src="/assets/icon.png" alt="" style="width: 46px; height: 46px; border-radius: 12px; object-fit: cover">
 <span style="display: flex; flex-direction: column; line-height: 1.25; flex: 1 1 auto"><span style="font-size: 15px; font-weight: 700">Hunt Halal</span><span style="font-size: 12px; color: #6B6878">Free · Halal food near you</span></span>
 <a href="#download" style="background: #D7263D; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 46px; display: flex; align-items: center">Get</a>
@@ -905,7 +916,7 @@ Is it only in the UK?
 </div>
 
 <!-- NAV -->
-<header style="background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid #ECE7E2; position: sticky; top: 0; z-index: 30">
+<header style="background: rgba(255,255,255,.94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid #ECE7E2; position: sticky; top: 0; z-index: 30">
 <nav class="hh-nav hh-navbar" aria-label="Main" style="max-width: 1240px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
 <a href="#top" aria-label="Hunt Halal home" style="display: flex; align-items: center; gap: 10px; flex: 0 0 auto">
 <img class="hh-logo-icon" src="/assets/icon.png" alt="" style="width: 42px; height: 42px; border-radius: 12px; object-fit: cover">
@@ -1008,7 +1019,7 @@ Search
 </sc-if>
 <div class="hh-pop hh-hide-sm" style="animation-delay: 2.2s; position: absolute; right: -14px; top: 130px; z-index: 4; background: #FFFFFF; border-radius: 16px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; box-shadow: 0 16px 32px rgba(40,0,6,.35); transform-origin: center">
 <span style="width: 36px; height: 36px; border-radius: 50%; background: #E3F4EB; display: flex; align-items: center; justify-content: center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1E8E5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
-<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 13px; font-weight: 700; color: #1E8E5A">Certified</span><span style="font-size: 11px; color: #6B6878">Certificate checked</span></span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-size: 13px; font-weight: 700; color: #17714A">Certified</span><span style="font-size: 11px; color: #6B6878">Certificate checked</span></span>
 </div>
 <div class="hh-phone" role="img" aria-label="The Hunt Halal app's Home screen" style="position: relative; z-index: 2; width: 312px; background: #1C1B29; border-radius: 50px; padding: 11px; box-shadow: 0 50px 90px rgba(30,0,4,.6), inset 0 0 0 2px #3a3946; transform: rotate(2deg)">
 <div style="border-radius: 40px; overflow: hidden; background: #FAF8F6; color: #1C1B29; height: 640px; display: flex; flex-direction: column">
@@ -1500,7 +1511,7 @@ or
 </div>
 <nav aria-label="Halal food by town" style="border-top: 1px solid #33333B; padding-top: 28px; display: flex; flex-direction: column; gap: 14px">
 <span style="font-weight: 700; color: #FFFFFF; font-size: 15px">Halal food near you, by town</span>
-<div style="display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14px"><a href="https://hunthalal.com/halal-food/london">Halal food in London</a><a href="https://hunthalal.com/halal-food/birmingham">Halal food in Birmingham</a><a href="https://hunthalal.com/halal-food/manchester">Halal food in Manchester</a><a href="https://hunthalal.com/halal-food/bradford">Halal food in Bradford</a><a href="https://hunthalal.com/halal-food/leicester">Halal food in Leicester</a><a href="https://hunthalal.com/halal-food/glasgow-city">Halal food in Glasgow City</a><a href="https://hunthalal.com/halal-food/leeds">Halal food in Leeds</a><a href="https://hunthalal.com/halal-food/bolton">Halal food in Bolton</a><a href="https://hunthalal.com/halal-food/luton">Halal food in Luton</a><a href="https://hunthalal.com/halal-food/slough">Halal food in Slough</a><a href="https://hunthalal.com/halal-food/coventry">Halal food in Coventry</a><a href="https://hunthalal.com/halal-food/kirklees">Halal food in Kirklees</a><a href="https://hunthalal.com/halal-food/nottingham">Halal food in Nottingham</a><a href="https://hunthalal.com/halal-food/liverpool">Halal food in Liverpool</a><a href="https://hunthalal.com/halal-food/sheffield">Halal food in Sheffield</a><a href="https://hunthalal.com/halal-food/sandwell">Halal food in Sandwell</a><a href="https://hunthalal.com/halal-food/cardiff">Halal food in Cardiff</a><a href="https://hunthalal.com/halal-food/newcastle-upon-tyne">Halal food in Newcastle upon Tyne</a><a href="https://hunthalal.com/halal-food/blackburn-with-darwen">Halal food in Blackburn with Darwen</a><a href="https://hunthalal.com/halal-food/rochdale">Halal food in Rochdale</a><a href="https://hunthalal.com/halal-food/derby">Halal food in Derby</a><a href="https://hunthalal.com/halal-food/milton-keynes">Halal food in Milton Keynes</a><a href="https://hunthalal.com/halal-food/reading">Halal food in Reading</a><a href="https://hunthalal.com/halal-food/buckinghamshire">Halal food in Buckinghamshire</a><a href="https://hunthalal.com/halal-food/" style="font-weight: 700">All 82 towns</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14px"><a href="https://hunthalal.com/halal-food/london">Halal food in London</a><a href="https://hunthalal.com/halal-food/birmingham">Halal food in Birmingham</a><a href="https://hunthalal.com/halal-food/manchester">Halal food in Manchester</a><a href="https://hunthalal.com/halal-food/bradford">Halal food in Bradford</a><a href="https://hunthalal.com/halal-food/leicester">Halal food in Leicester</a><a href="https://hunthalal.com/halal-food/glasgow">Halal food in Glasgow</a><a href="https://hunthalal.com/halal-food/leeds">Halal food in Leeds</a><a href="https://hunthalal.com/halal-food/huddersfield-dewsbury-batley">Halal food in Huddersfield, Dewsbury &amp; Batley</a><a href="https://hunthalal.com/halal-food/bolton">Halal food in Bolton</a><a href="https://hunthalal.com/halal-food/luton">Halal food in Luton</a><a href="https://hunthalal.com/halal-food/slough">Halal food in Slough</a><a href="https://hunthalal.com/halal-food/coventry">Halal food in Coventry</a><a href="https://hunthalal.com/halal-food/nottingham">Halal food in Nottingham</a><a href="https://hunthalal.com/halal-food/liverpool">Halal food in Liverpool</a><a href="https://hunthalal.com/halal-food/edinburgh">Halal food in Edinburgh</a><a href="https://hunthalal.com/halal-food/sheffield">Halal food in Sheffield</a><a href="https://hunthalal.com/halal-food/west-bromwich-smethwick">Halal food in West Bromwich &amp; Smethwick</a><a href="https://hunthalal.com/halal-food/cardiff">Halal food in Cardiff</a><a href="https://hunthalal.com/halal-food/buckinghamshire">Halal food in Buckinghamshire</a><a href="https://hunthalal.com/halal-food/blackburn">Halal food in Blackburn</a><a href="https://hunthalal.com/halal-food/newcastle-upon-tyne">Halal food in Newcastle upon Tyne</a><a href="https://hunthalal.com/halal-food/bristol">Halal food in Bristol</a><a href="https://hunthalal.com/halal-food/rochdale">Halal food in Rochdale</a><a href="https://hunthalal.com/halal-food/derby">Halal food in Derby</a><a href="https://hunthalal.com/halal-food/" style="font-weight: 700">All 81 towns</a></div>
 </nav>
 <div style="border-top: 1px solid #33333B; padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #AAA7B6">
 <span>© 2026 DTA Digital Studio Ltd. All rights reserved.</span>
@@ -1510,7 +1521,7 @@ or
 </footer>
 
 <!-- MOBILE STICKY DOWNLOAD BAR (phones only) -->
-<div class="hh-mobilebar {{ barClass }}" style="position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 40; background: #FFFFFF; border-radius: 20px; padding: 10px 12px; align-items: center; gap: 12px; box-shadow: 0 16px 36px rgba(28,27,41,.35); border: 1px solid #ECE7E2">
+<div class="hh-mobilebar {{ barClass }}" style="position: fixed; left: 12px; right: 12px; z-index: 40; background: #FFFFFF; border-radius: 20px; padding: 10px 12px; align-items: center; gap: 12px; box-shadow: 0 16px 36px rgba(28,27,41,.35); border: 1px solid #ECE7E2">
 <img src="/assets/icon.png" alt="" style="width: 46px; height: 46px; border-radius: 12px; object-fit: cover">
 <span style="display: flex; flex-direction: column; line-height: 1.25; flex: 1 1 auto"><span style="font-size: 15px; font-weight: 700">Hunt Halal</span><span style="font-size: 12px; color: #6B6878">Free · Halal food near you</span></span>
 <a href="#download" style="background: #D7263D; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 999px; min-height: 46px; display: flex; align-items: center">Get</a>
@@ -1584,7 +1595,7 @@ class Component extends DCLogic {
     var D = this.state.data || [];
     var loaded = !!this.state.data;
     var CATS = [
-      { l: 'Fast food', c: '#C4650F' }, { l: 'Restaurant', c: '#D7263D' }, { l: 'Food truck', c: '#1F6F91' },
+      { l: 'Fast food', c: '#A85A12' }, { l: 'Restaurant', c: '#D7263D' }, { l: 'Food truck', c: '#1F6F91' },
       { l: 'Desserts', c: '#B0356B' }, { l: 'Café', c: '#8B5E3C' }, { l: 'Butcher', c: '#7A0A12' }
     ];
     var BASIS = ['Tagged halal', 'Name says halal', 'Halal chain', 'Listed as halal'];
