@@ -403,7 +403,7 @@ Search town, postcode or food
 </div>
 
 <div role="status" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin: 26px 0 16px; min-height: 46px">
-<div style="font-size: 18px; font-weight: 700">A taste of 5,354 halal places across the UK</div>
+<div id="hh-results" style="font-size: 18px; font-weight: 700">A taste of 5,354 halal places across the UK</div>
 
 <button type="button" class="hh-cta" style="border: 2px solid #1C1B29; background: #FFFFFF; color: #1C1B29; font: inherit; font-weight: 600; font-size: 15px; padding: 10px 20px; border-radius: 999px; cursor: pointer; min-height: 46px; display: inline-flex; align-items: center; gap: 8px">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.3L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-15.5 6.3L3 16"></path><path d="M3 21v-5h5"></path></svg>
@@ -1135,7 +1135,7 @@ Search town, postcode or food
 </div>
 
 <div role="status" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin: 26px 0 16px; min-height: 46px">
-<div style="font-size: 18px; font-weight: 700">{{ resultLine }}</div>
+<div id="hh-results" style="font-size: 18px; font-weight: 700">{{ resultLine }}</div>
 <sc-if value="{{ showMore }}" hint-placeholder-val="{{ false }}">
 <button type="button" class="hh-cta" onClick="{{ nextPage }}" style="border: 2px solid #1C1B29; background: #FFFFFF; color: #1C1B29; font: inherit; font-weight: 600; font-size: 15px; padding: 10px 20px; border-radius: 999px; cursor: pointer; min-height: 46px; display: inline-flex; align-items: center; gap: 8px">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.3L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-15.5 6.3L3 16"></path><path d="M3 21v-5h5"></path></svg>
@@ -1590,7 +1590,25 @@ class Component extends DCLogic {
     };
     var bird = this.state.bird;
     var goFinder = function () {
-      try { var el = document.getElementById('finder'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) {}
+      // Close the phone keyboard first: the screen resizes as it closes, which cuts a smooth scroll short
+      try { if (document.activeElement && document.activeElement.blur) document.activeElement.blur(); } catch (e) {}
+      // On phones go straight to the results; on wider screens the whole finder fits
+      var target = function () { return (window.innerWidth < 900 && document.getElementById('hh-results')) || document.getElementById('finder'); };
+      var go = function (smooth) {
+        try {
+          var el = target(); if (!el) return;
+          var nav = document.querySelector('.hh-navbar');
+          var off = (nav ? nav.getBoundingClientRect().height : 0) + 8;
+          var top = el.getBoundingClientRect().top + (window.pageYOffset || 0) - off;
+          window.scrollTo({ top: Math.max(0, top), behavior: smooth ? 'smooth' : 'auto' });
+        } catch (e) {}
+      };
+      var touch = typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches;
+      setTimeout(function () { go(true); }, touch ? 350 : 0);
+      // Check again once the scroll has had time to finish, in case the page moved under it
+      setTimeout(function () {
+        try { var el = target(); var r = el && el.getBoundingClientRect(); if (r && Math.abs(r.top) > 160) go(false); } catch (e) {}
+      }, touch ? 1400 : 1000);
     };
     var D = this.state.data || [];
     var loaded = !!this.state.data;
